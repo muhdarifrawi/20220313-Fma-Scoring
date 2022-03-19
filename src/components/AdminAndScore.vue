@@ -2,7 +2,7 @@
     <div class="container-fluid custom-top-buffer">
         <h1>Administration and Scoring</h1>
         <table class="table table-striped">
-            <tr>
+            <tr class="table-dark">
                 <th>#</th>
                 <th>Test Item</th>
                 <th colspan="3">Score</th>
@@ -12,8 +12,7 @@
                 <th>Motor</th>
                 <th>0</th>
                 <th>1</th>
-                <th>2</th>
-                
+                <th>2</th> 
             </tr>
             <tr>
                 <td></td>
@@ -442,6 +441,91 @@
                 </td>
                 <td>    
                     <input class="form-check-input" type="radio" name="speed" value=2>
+                </td>
+            </tr>
+            <tr class="table-info">
+                <th></th>
+                <th>Sensation</th>
+                <th>0</th>
+                <th>1</th>
+                <th>2</th> 
+            </tr>
+            <tr>
+                <td></td>
+                <td>Light Touch - Upper Arm, Forearm</td>
+                <td>
+                    <input class="form-check-input" type="radio" name="light-touch-upper-arm-forearm" value=0>
+                </td>
+                <td>
+                    <input class="form-check-input" type="radio" name="light-touch-upper-arm-forearm" value=1>
+                </td>
+                <td>    
+                    <input class="form-check-input" type="radio" name="light-touch-upper-arm-forearm" value=2>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Light Touch - Palmar Surface of Hand</td>
+                <td>
+                    <input class="form-check-input" type="radio" name="light-touch-palmar-surface-of-hand" value=0>
+                </td>
+                <td>
+                    <input class="form-check-input" type="radio" name="light-touch-palmar-surface-of-hand" value=1>
+                </td>
+                <td>    
+                    <input class="form-check-input" type="radio" name="light-touch-palmar-surface-of-hand" value=2>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Position - Shoulder</td>
+                <td>
+                    <input class="form-check-input" type="radio" name="position-shoulder" value=0>
+                </td>
+                <td>
+                    <input class="form-check-input" type="radio" name="position-shoulder" value=1>
+                </td>
+                <td>    
+                    <input class="form-check-input" type="radio" name="position-shoulder" value=2>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Position - Elbow</td>
+                <td>
+                    <input class="form-check-input" type="radio" name="position-elbow" value=0>
+                </td>
+                <td>
+                    <input class="form-check-input" type="radio" name="position-elbow" value=1>
+                </td>
+                <td>    
+                    <input class="form-check-input" type="radio" name="position-elbow" value=2>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Position - Wrist</td>
+                <td>
+                    <input class="form-check-input" type="radio" name="position-wrist" value=0>
+                </td>
+                <td>
+                    <input class="form-check-input" type="radio" name="position-wrist" value=1>
+                </td>
+                <td>    
+                    <input class="form-check-input" type="radio" name="position-wrist" value=2>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Position - Thumb</td>
+                <td>
+                    <input class="form-check-input" type="radio" name="position-thumb" value=0>
+                </td>
+                <td>
+                    <input class="form-check-input" type="radio" name="position-thumb" value=1>
+                </td>
+                <td>    
+                    <input class="form-check-input" type="radio" name="position-thumb" value=2>
                 </td>
             </tr>
         </table>
