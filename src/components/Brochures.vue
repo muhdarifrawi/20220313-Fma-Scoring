@@ -1,6 +1,6 @@
 <template>
     <div class="container-fluid custom-top-buffer">
-        <h1>Landing page</h1>
+        <h1>Brochures</h1>
     </div>
 </template>
 <script>

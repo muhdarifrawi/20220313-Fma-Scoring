@@ -1,7 +1,7 @@
 <template>
   <nav class="navbar fixed-top navbar-dark bg-dark">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">FMA Scoring</a>
+      <a v-on:click="goMain" class="navbar-brand" href="#">FMA Scoring</a>
       <button
         class="navbar-toggler"
         type="button"
@@ -15,17 +15,17 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarText">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <span class="nav-link navbar-toggler my-2" aria-current="page" href="#"
+          <span v-on:click="goAdminScoring" class="nav-link navbar-toggler my-2" aria-current="page" href="#"
               data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation"
             >
               Administration and Scoring
             </span>
-            <span class="nav-link navbar-toggler my-2" aria-current="page" href="#"
+            <span v-on:click="goIntervention" class="nav-link navbar-toggler my-2" aria-current="page" href="#"
               data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation"
             >
               Intervention
             </span>
-            <span class="nav-link navbar-toggler my-2" aria-current="page" href="#"
+            <span v-on:click="goBrochures" class="nav-link navbar-toggler my-2" aria-current="page" href="#"
               data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation"
             >
               Brochures
@@ -38,6 +38,20 @@
 <script>
 export default {
   name: "Navbar",
+  methods:{
+    goMain(){
+      this.$emit("clicked","main");
+    },
+    goAdminScoring(){
+      this.$emit("clicked","admin-scoring");
+    },
+    goIntervention(){
+      this.$emit("clicked","intervention");
+    },
+    goBrochures(){
+      this.$emit("clicked","brochures");
+    }
+  }
 };
 </script>
 <style>
