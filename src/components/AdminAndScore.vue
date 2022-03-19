@@ -528,6 +528,169 @@
                     <input class="form-check-input" type="radio" name="position-thumb" value=2>
                 </td>
             </tr>
+            <tr class="table-info">
+                <th></th>
+                <th>Passive Joint Motion</th>
+                <th>0</th>
+                <th>1</th>
+                <th>2</th> 
+            </tr>
+            <tr>
+                <td></td>
+                <td>Shoulder Flexion (0&deg; - 180 &deg;)</td>
+                <td>
+                    <input class="form-check-input" type="radio" name="shoulder-flexion-0-180" value=0>
+                </td>
+                <td>
+                    <input class="form-check-input" type="radio" name="shoulder-flexion-0-180" value=1>
+                </td>
+                <td>    
+                    <input class="form-check-input" type="radio" name="shoulder-flexion-0-180" value=2>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Shoulder Abduction (0&deg; - 90 &deg;)</td>
+                <td>
+                    <input class="form-check-input" type="radio" name="shoulder-abduction-0-90" value=0>
+                </td>
+                <td>
+                    <input class="form-check-input" type="radio" name="shoulder-abduction-0-90" value=1>
+                </td>
+                <td>    
+                    <input class="form-check-input" type="radio" name="shoulder-abduction-0-90" value=2>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>External Rotation</td>
+                <td>
+                    <input class="form-check-input" type="radio" name="external-rotation" value=0>
+                </td>
+                <td>
+                    <input class="form-check-input" type="radio" name="external-rotation" value=1>
+                </td>
+                <td>    
+                    <input class="form-check-input" type="radio" name="external-rotation" value=2>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Internal Rotation</td>
+                <td>
+                    <input class="form-check-input" type="radio" name="internal-rotation" value=0>
+                </td>
+                <td>
+                    <input class="form-check-input" type="radio" name="internal-rotation" value=1>
+                </td>
+                <td>    
+                    <input class="form-check-input" type="radio" name="internal-rotation" value=2>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Elbow Flexion</td>
+                <td>
+                    <input class="form-check-input" type="radio" name="elbow-flexion" value=0>
+                </td>
+                <td>
+                    <input class="form-check-input" type="radio" name="elbow-flexion" value=1>
+                </td>
+                <td>    
+                    <input class="form-check-input" type="radio" name="elbow-flexion" value=2>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Elbow Extension</td>
+                <td>
+                    <input class="form-check-input" type="radio" name="elbow-extension" value=0>
+                </td>
+                <td>
+                    <input class="form-check-input" type="radio" name="elbow-extension" value=1>
+                </td>
+                <td>    
+                    <input class="form-check-input" type="radio" name="elbow-extension" value=2>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Forearm Pronation</td>
+                <td>
+                    <input class="form-check-input" type="radio" name="forearm-pronation" value=0>
+                </td>
+                <td>
+                    <input class="form-check-input" type="radio" name="forearm-pronation" value=1>
+                </td>
+                <td>    
+                    <input class="form-check-input" type="radio" name="forearm-pronation" value=2>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Forearm Supination</td>
+                <td>
+                    <input class="form-check-input" type="radio" name="forearm-supination" value=0>
+                </td>
+                <td>
+                    <input class="form-check-input" type="radio" name="forearm-supination" value=1>
+                </td>
+                <td>    
+                    <input class="form-check-input" type="radio" name="forearm-supination" value=2>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Wrist Flexion</td>
+                <td>
+                    <input class="form-check-input" type="radio" name="wrist-flexion" value=0>
+                </td>
+                <td>
+                    <input class="form-check-input" type="radio" name="wrist-flexion" value=1>
+                </td>
+                <td>    
+                    <input class="form-check-input" type="radio" name="wrist-flexion" value=2>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Wrist Extension</td>
+                <td>
+                    <input class="form-check-input" type="radio" name="wrist-extension" value=0>
+                </td>
+                <td>
+                    <input class="form-check-input" type="radio" name="wrist-extension" value=1>
+                </td>
+                <td>    
+                    <input class="form-check-input" type="radio" name="wrist-extension" value=2>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Fingers Flexion</td>
+                <td>
+                    <input class="form-check-input" type="radio" name="fingers-flexion" value=0>
+                </td>
+                <td>
+                    <input class="form-check-input" type="radio" name="fingers-flexion" value=1>
+                </td>
+                <td>    
+                    <input class="form-check-input" type="radio" name="fingers-flexion" value=2>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Fingers Extension</td>
+                <td>
+                    <input class="form-check-input" type="radio" name="fingers-extension" value=0>
+                </td>
+                <td>
+                    <input class="form-check-input" type="radio" name="fingers-extension" value=1>
+                </td>
+                <td>    
+                    <input class="form-check-input" type="radio" name="fingers-extension" value=2>
+                </td>
+            </tr>
         </table>
     </div>
 </template>
