@@ -43,7 +43,7 @@ export default {
       this.$emit("clicked","main");
     },
     goAdminScoring(){
-      this.$emit("clicked","admin-scoring");
+      this.$emit("clicked","admin-score");
     },
     goIntervention(){
       this.$emit("clicked","intervention");

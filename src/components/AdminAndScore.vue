@@ -14,6 +14,8 @@
                 <th>1</th>
                 <th>2</th> 
             </tr>
+            <!-- WARNING: Need to rename the NAME portion of the radio buttons
+                    give unique identifier to it eg: bicep-reflex-mtr -->
             <tr>
                 <td></td>
                 <td>Biceps Reflex</td>
