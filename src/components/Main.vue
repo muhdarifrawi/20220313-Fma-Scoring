@@ -1,5 +1,9 @@
 <template>
-    <p>{{test}}</p>
+    <div class="container-fluid custom-top-buffer">
+        <p>
+            this is a test
+        </p>
+    </div>
 </template>
 <script>
 export default {
@@ -12,5 +16,8 @@ export default {
 }
 </script>
 <style>
-
+    .custom-top-buffer{
+        margin-top:55px;
+        background: salmon;
+    }
 </style>
