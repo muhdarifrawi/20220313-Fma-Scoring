@@ -14,8 +14,5 @@ export default {
 }
 </script>
 <style>
-    .custom-top-buffer{
-        margin-top:55px;
-        background: salmon;
-    }
+    
 </style>
