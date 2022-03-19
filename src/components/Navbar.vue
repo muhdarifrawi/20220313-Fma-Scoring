@@ -15,16 +15,22 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarText">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Administration and Scoring</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Intervention</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Brochures</a>
-          </li>
-        </ul>
+          <span class="nav-link navbar-toggler my-2" aria-current="page" href="#"
+              data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation"
+            >
+              Administration and Scoring
+            </span>
+            <span class="nav-link navbar-toggler my-2" aria-current="page" href="#"
+              data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation"
+            >
+              Intervention
+            </span>
+            <span class="nav-link navbar-toggler my-2" aria-current="page" href="#"
+              data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation"
+            >
+              Brochures
+            </span>
+          </ul>
       </div>
     </div>
   </nav>
@@ -35,4 +41,9 @@ export default {
 };
 </script>
 <style>
+  .nav-link{
+    border:0;
+    font-size:1em;
+    cursor:pointer;
+  }
 </style>
