@@ -20,13 +20,13 @@
                 <td></td>
                 <td>Biceps Reflex</td>
                 <td>
-                    <input class="form-check-input" type="radio" name="biceps-reflex-mtr" value=0>
+                    <input class="form-check-input" type="radio" name="biceps-reflex-mtr" value=0 >
                 </td>
                 <td>
-                    <input class="form-check-input" type="radio" name="biceps-reflex-mtr" value=1>
+                    <input class="form-check-input" type="radio" name="biceps-reflex-mtr" value=1 >
                 </td>
                 <td>    
-                    <input class="form-check-input" type="radio" name="biceps-reflex-mtr" value=2>
+                    <input class="form-check-input" type="radio" name="biceps-reflex-mtr" value=2 >
                 </td>
             </tr>
             <tr>
@@ -864,7 +864,70 @@ export default {
     name:"Main",
     data(){
         return{
-            test:"test"
+            test:"test",
+            bicepsReflexMtr:null,
+            tricepsReflexMtr:null,
+            shoulderRetractionMtr:null,
+            shoulderElevationMtr:null,
+            shoulderAbductionMtr:null,
+            shoulderExternalRotationMtr:null,
+            elbowFlexionMtr:null,
+            forearmSupinationMtr:null,
+            shoulderAdductionInternalRotationMtr:null,
+            elbowExtensionMtr:null,
+            forearmPronationMtr:null,
+            handToLumbarSpineMtr:null,
+            shoulderFlexion090ElbowExtendedMtr:null,
+            forearmPronationSupinationElbowAt90Mtr:null,
+            shoulderAbduction090ElbowExtendedMtr:null,
+            shoulderFlexion90180ElbowExtendedMtr:null,
+            forearmPronationSupinationElbowExtendedMtr:null,
+            normalReflexActivityMtr:null,
+            wristStabilityElbowAt90Mtr:null,
+            wristFlexionExtensionElbowAt90Mtr:null,
+            wristStabilityElbowExtendedMtr:null,
+            wristFlexionExtensionElbowExtendedMtr:null,
+            wristCircumductionMtr:null,
+            fingersMassFlexionMtr:null,
+            fingersMassExtensionMtr:null,
+            distalFingerGraspHookGraspMtr:null,
+            thumbAdductionGraspMtr:null,
+            thumbToIndexFingerGraspMtr:null,
+            cylindricalGraspMtr:null,
+            sphericalGraspMtr:null,
+            tremorMtr:null,
+            dysmetriaMtr:null,
+            speedMtr:null,
+            lightTouchUpperArmForearmSnt:null,
+            lightTouchPalmarSurfaceOfHandSnt:null,
+            positionShoulderSnt:null,
+            positionElbowSnt:null,
+            positionWristSnt:null,
+            positionThumbSnt:null,
+            shoulderFlexion0180Pjt:null,
+            shoulderAbduction090Pjt:null,
+            externalRotationPjt:null,
+            internalRotationPjt:null,
+            elbowFlexionPjt:null,
+            elbowExtensionPjt:null,
+            forearmPronationPjt:null,
+            forearmSupinationPjt:null,
+            wristFlexionPjt:null,
+            wristExtensionPjt:null,
+            fingersFlexionPjt:null,
+            fingersExtensionPjt:null,
+            shoulderFlexion0180Jp:null,
+            shoulderAbduction090Jp:null,
+            externalRotationJp:null,
+            internalRotationJp:null,
+            elbowFlexionJp:null,
+            elbowExtensionJp:null,
+            forearmPronationJp:null,
+            forearmSupinationJp:null,
+            wristFlexionJp:null,
+            wristExtensionJp:null,
+            fingersFlexionJp:null,
+            fingersExtensionJp:null,
         }
     }
 }
