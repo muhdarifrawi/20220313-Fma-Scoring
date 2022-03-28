@@ -20,7 +20,7 @@
                 <td></td>
                 <td>Biceps Reflex</td>
                 <td>
-                    <input class="form-check-input" type="radio" name="biceps-reflex-mtr" value=0 >
+                    <input class="form-check-input" type="radio" name="biceps-reflex-mtr" value=0 v-model="bicepsReflexMtr">
                 </td>
                 <td>
                     <input class="form-check-input" type="radio" name="biceps-reflex-mtr" value=1 >

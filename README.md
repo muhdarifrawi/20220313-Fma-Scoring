@@ -1,5 +1,8 @@
 # fma-scoring
 
+## Known Issues
+- v-model is affecting the bootstrap table visuals.
+
 ## Project setup
 ```
 npm install
