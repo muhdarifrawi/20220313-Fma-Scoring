@@ -1,7 +1,8 @@
 <template>
-  <div class="container-fluid custom-top-buffer">
+  <div id="part-1" class="container-fluid custom-top-buffer" v-if="part==1">
     <h1>Administration and Scoring</h1>
-    <table class="table table-striped">
+    
+      <table class="table table-striped">
       <tr class="table-dark">
         <th>#</th>
         <th>Test Item</th>
@@ -14,8 +15,6 @@
         <th>1</th>
         <th>2</th>
       </tr>
-      <!-- WARNING: Need to rename the NAME portion of the radio buttons
-                    give unique identifier to it eg: bicep-reflex-mtr -->
       <tr>
         <td></td>
         <td>Biceps Reflex</td>
@@ -2029,14 +2028,148 @@
         <th>{{jpD}}/24</th>
       </tr>
     </table>
+    </div>
+  <div id="part-2" class="container-fluid custom-top-buffer" v-if="part==2">
+    <table class="table table-striped">
+      <tr>
+        <th>Score</th>
+        <th>Test Item</th>
+      </tr>
+      <tr>
+        <td>{{wristCircumductionMtr}}</td>
+        <td>Wrist Circumduction</td>
+      </tr>
+      <tr>
+        <td>{{distalFingerGraspHookGraspMtr}}</td>
+        <td>Distal Finger Grasp (Hook Grasp)</td>
+      </tr>
+      <tr>
+        <td>{{shoulderFlexion90180ElbowExtendedMtr}}</td>
+        <td>Shoulder Flexion 90&deg; - 180&deg;, elbow extended</td>
+      </tr>
+      <tr>
+        <td>{{sphericalGraspMtr}}</td>
+        <td>Spherical Grasp</td>
+      </tr>
+      <tr>
+        <td>{{thumbAdductionGraspMtr}}</td>
+        <td>Thumb Adduction Grasp</td>
+      </tr>
+      <tr>
+        <td>{{wristFlexionExtensionElbowExtendedMtr}}</td>
+        <td>Wrist Flexion/Extension, Elbow Extended</td>
+      </tr>
+      <tr>
+        <td>{{forearmPronationSupinationElbowExtendedMtr}}</td>
+        <td>Forearm Pronation-Supination, Elow Extended</td>
+      </tr>
+      <tr>
+        <td>{{wristStabilityElbowExtendedMtr}}</td>
+        <td>Wrist Stability, Elbow Extended</td>
+      </tr>
+      <tr>
+        <td>{{speedMtr}}</td>
+        <td>Speed</td>
+      </tr>
+      <tr>
+        <td>{{forearmSupinationMtr}}</td>
+        <td>Forearm Supination</td>
+      </tr>
+      <tr>
+        <td>{{shoulderAbduction090ElbowExtendedMtr}}</td>
+        <td>Shoulder Abduction 0&deg; - 90&deg;, Elbow Extended</td>
+      </tr>
+      <tr>
+        <td>{{dysmetriaMtr}}</td>
+        <td>Dysmetria</td>
+      </tr>
+      <tr>
+        <td>{{shoulderExternalRotationMtr}}</td>
+        <td>Shoulder External Rotation</td>
+      </tr>
+      <tr>
+        <td>{{wristStabilityElbowAt90Mtr}}</td>
+        <td>Wrist Stability, Elbow at 90&deg;</td>
+      </tr>
+      <tr>
+        <td>{{wristFlexionExtensionElbowAt90Mtr}}</td>
+        <td>Wrist Flexion/Extension, Elbow at 90&deg;</td>
+      </tr>
+      <tr>
+        <td>{{thumbToIndexFingerGraspMtr}}</td>
+        <td>Thumb to Index Finger Grasp</td>
+      </tr>
+      <tr>
+        <td>{{shoulderRetractionMtr}}</td>
+        <td>Shoulder Retraction</td>
+      </tr>
+      <tr>
+        <td>{{forearmPronationSupinationElbowAt90Mtr}}</td>
+        <td>Forearm Pronation-Supination, Elbow at 90&deg;</td>
+      </tr>
+      <tr>
+        <td>{{shoulderFlexion090ElbowExtendedMtr}}</td>
+        <td>Shoulder Flexion 0&deg;-90&deg;, Elbow Extended</td>
+      </tr>
+      <tr>
+        <td>{{handToLumbarSpineMtr}}</td>
+        <td>Hand to Lumbar Spine</td>
+      </tr>
+      <tr>
+        <td>{{shoulderAbductionMtr}}</td>
+        <td>Shoulder Abduction</td>
+      </tr>
+      <tr>
+        <td>{{elbowExtensionMtr}}</td>
+        <td>Elbow Extension</td>
+      </tr>
+      <tr>
+        <td>{{forearmPronationMtr}}</td>
+        <td>Forearm Pronation</td>
+      </tr>
+      <tr>
+        <td>{{tremorMtr}}</td>
+        <td>Tremor</td>
+      </tr>
+      <tr>
+        <td>{{cylindricalGraspMtr}}</td>
+        <td>Cylindrical Grasp</td>
+      </tr>
+      <tr>
+        <td>{{fingersMassExtensionMtr}}</td>
+        <td>Finger Mass Extension</td>
+      </tr>
+      <tr>
+        <td>{{shoulderElevationMtr}}</td>
+        <td>Shoulder Elevation</td>
+      </tr>
+      <tr>
+        <td>{{fingersMassFlexionMtr}}</td>
+        <td>Finger Mass Flexion</td>
+      </tr>
+      <tr>
+        <td>{{shoulderAdductionInternalRotationMtr}}</td>
+        <td>Shoulder Adduction/Internal Rotation</td>
+      </tr>
+      <tr>
+        <td>{{elbowFlexionMtr}}</td>
+        <td>Elbow Flexion</td>
+      </tr>
+    </table>
   </div>
+<div id="btn-controls">
+  <button class="btn btn-light" @click="decreasePage">Previous </button>
+  <span>{{part}}</span>
+  <button class="btn btn-light" @click="increasePage">Next</button>
+</div>
 </template>
 <script>
 export default {
   name: "Main",
   data() {
     return {
-      test: "test",
+      test: "test-score",
+      part:1,
       bicepsReflexMtr: null,
       tricepsReflexMtr: null,
       shoulderRetractionMtr: null,
@@ -2201,6 +2334,18 @@ export default {
       );
     },
   },
+  methods:{
+    increasePage(){
+      if(this.part<2){
+        this.part += 1;
+      }
+    },
+    decreasePage(){
+      if (this.part>1){
+        this.part -= 1;
+      }
+    }
+  }
 };
 </script>
 <style>

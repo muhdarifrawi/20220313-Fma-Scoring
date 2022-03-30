@@ -20,6 +20,11 @@
             >
               Administration and Scoring
             </span>
+            <span v-on:click="goKeyform" class="nav-link navbar-toggler my-2" aria-current="page" href="#"
+              data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation"
+            >
+              Keyform
+            </span>
             <span v-on:click="goIntervention" class="nav-link navbar-toggler my-2" aria-current="page" href="#"
               data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation"
             >
@@ -44,6 +49,9 @@ export default {
     },
     goAdminScoring(){
       this.$emit("clicked","admin-score");
+    },
+    goKeyform(){
+      this.$emit("clicked","keyform");
     },
     goIntervention(){
       this.$emit("clicked","intervention");

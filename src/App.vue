@@ -1,7 +1,8 @@
 <template>
   <Navbar @clicked="onClickPage"></Navbar>
   <Main v-if="page==='main'"></Main>
-  <AdminAndScore v-if="page === 'admin-score'"></AdminAndScore>
+  <AdminAndScore v-if="page === 'admin-score'" v-bind:="test"></AdminAndScore>
+  <Keyform v-if="page === 'keyform'" :scoreData="scoreData"></Keyform>
   <Intervention v-if="page === 'intervention'"></Intervention>
   <Brochures v-if="page === 'brochures'"></Brochures>
 </template>
@@ -10,6 +11,7 @@
 import Navbar from './components/Navbar.vue'
 import Main from './components/Main.vue'
 import AdminAndScore from './components/AdminAndScore.vue'
+import Keyform from './components/Keyform.vue'
 import Intervention from './components/Intervention.vue'
 import Brochures from './components/Brochures.vue'
 
@@ -19,12 +21,13 @@ export default {
     Navbar,
     Main,
     AdminAndScore,
+    Keyform,
     Intervention,
     Brochures
   },
   data(){
     return{
-      page:"admin-score"
+      page:"admin-score",
     }
   },
   methods:{
