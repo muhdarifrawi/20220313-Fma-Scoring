@@ -2030,6 +2030,7 @@
     </table>
     </div>
   <div id="part-2" class="container-fluid custom-top-buffer" v-if="part==2">
+    <h1>Administration and Scoring</h1>
     <table class="table table-striped">
       <tr>
         <th>Score</th>
@@ -2157,7 +2158,10 @@
       </tr>
     </table>
   </div>
-<div id="btn-controls">
+  <div id="part-3" class="container-fluid custom-top-buffer" v-if="part==3">
+    <h1>Administration and Scoring</h1>
+  </div>
+<div id="btn-controls" class="container-fluid d-flex justify-content-center">
   <button class="btn btn-light" @click="decreasePage">Previous </button>
   <span>{{part}}</span>
   <button class="btn btn-light" @click="increasePage">Next</button>
@@ -2333,10 +2337,25 @@ export default {
         parseInt(this.fingersExtensionJp)
       );
     },
+    computeScore(){
+      let formData = [];
+      formData.push([
+        this.elbowFlexionMtr, this.shoulderAdductionInternalRotationMtr, this.fingersMassFlexionMtr,
+        this.shoulderElevationMtr, this.fingersMassExtensionMtr, this.cylindricalGraspMtr,
+        this.tremorMtr, this.forearmPronationMtr, this.elbowExtensionMtr, this.shoulderAbductionMtr,
+        this.handToLumbarSpineMtr, this. shoulderFlexion090ElbowExtendedMtr, this.forearmPronationSupinationElbowAt90Mtr,
+        this.shoulderRetractionMtr, this.thumbToIndexFingerGraspMtr, this.wristFlexionExtensionElbowAt90Mtr, this.wristStabilityElbowAt90Mtr,
+        this.shoulderExternalRotationMtr, this.dysmetriaMtr, this.shoulderAbduction090ElbowExtendedMtr, this.forearmSupinationMtr,
+        this.speedMtr, this.wristStabilityElbowExtendedMtr, this.forearmPronationSupinationElbowExtendedMtr,
+        this.wristFlexionExtensionElbowExtendedMtr, this.thumbAdductionGraspMtr, this.sphericalGraspMtr,
+        this.shoulderFlexion90180ElbowExtendedMtr, this.distalFingerGraspHookGraspMtr, this.wristCircumductionMtr
+      ])
+      return formData
+    }
   },
   methods:{
     increasePage(){
-      if(this.part<2){
+      if(this.part<3){
         this.part += 1;
       }
     },
