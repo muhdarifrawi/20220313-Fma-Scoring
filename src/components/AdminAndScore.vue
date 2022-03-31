@@ -2165,6 +2165,7 @@
   <button class="btn btn-light" @click="decreasePage">Previous </button>
   <span>{{part}}</span>
   <button class="btn btn-light" @click="increasePage">Next</button>
+  <button class="btn btn-light" @click="computeScore">compute</button>
 </div>
 </template>
 <script>
@@ -2237,6 +2238,7 @@ export default {
       wristExtensionJp: null,
       fingersFlexionJp: null,
       fingersExtensionJp: null,
+      formData:[],
     };
   },
   computed: {
@@ -2337,21 +2339,7 @@ export default {
         parseInt(this.fingersExtensionJp)
       );
     },
-    computeScore(){
-      let formData = [];
-      formData.push([
-        this.elbowFlexionMtr, this.shoulderAdductionInternalRotationMtr, this.fingersMassFlexionMtr,
-        this.shoulderElevationMtr, this.fingersMassExtensionMtr, this.cylindricalGraspMtr,
-        this.tremorMtr, this.forearmPronationMtr, this.elbowExtensionMtr, this.shoulderAbductionMtr,
-        this.handToLumbarSpineMtr, this. shoulderFlexion090ElbowExtendedMtr, this.forearmPronationSupinationElbowAt90Mtr,
-        this.shoulderRetractionMtr, this.thumbToIndexFingerGraspMtr, this.wristFlexionExtensionElbowAt90Mtr, this.wristStabilityElbowAt90Mtr,
-        this.shoulderExternalRotationMtr, this.dysmetriaMtr, this.shoulderAbduction090ElbowExtendedMtr, this.forearmSupinationMtr,
-        this.speedMtr, this.wristStabilityElbowExtendedMtr, this.forearmPronationSupinationElbowExtendedMtr,
-        this.wristFlexionExtensionElbowExtendedMtr, this.thumbAdductionGraspMtr, this.sphericalGraspMtr,
-        this.shoulderFlexion90180ElbowExtendedMtr, this.distalFingerGraspHookGraspMtr, this.wristCircumductionMtr
-      ])
-      return formData
-    }
+    
   },
   methods:{
     increasePage(){
@@ -2363,6 +2351,62 @@ export default {
       if (this.part>1){
         this.part -= 1;
       }
+    },
+    computeScore(){
+      // let formData = [];
+      this.formData.push([
+        this.elbowFlexionMtr, this.shoulderAdductionInternalRotationMtr, this.fingersMassFlexionMtr,
+        this.shoulderElevationMtr, this.fingersMassExtensionMtr, this.cylindricalGraspMtr,
+        this.tremorMtr, this.forearmPronationMtr, this.elbowExtensionMtr, this.shoulderAbductionMtr,
+        this.handToLumbarSpineMtr, this. shoulderFlexion090ElbowExtendedMtr, this.forearmPronationSupinationElbowAt90Mtr,
+        this.shoulderRetractionMtr, this.thumbToIndexFingerGraspMtr, this.wristFlexionExtensionElbowAt90Mtr, this.wristStabilityElbowAt90Mtr,
+        this.shoulderExternalRotationMtr, this.dysmetriaMtr, this.shoulderAbduction090ElbowExtendedMtr, this.forearmSupinationMtr,
+        this.speedMtr, this.wristStabilityElbowExtendedMtr, this.forearmPronationSupinationElbowExtendedMtr,
+        this.wristFlexionExtensionElbowExtendedMtr, this.thumbAdductionGraspMtr, this.sphericalGraspMtr,
+        this.shoulderFlexion90180ElbowExtendedMtr, this.distalFingerGraspHookGraspMtr, this.wristCircumductionMtr
+      ]);
+      let flag = false;
+      let startIndex = 0;
+      let checkVal = 0;
+
+      if (this.part == 3){
+        console.log("reached: " + this.formData[0].length)
+        while (flag === false && startIndex < this.formData[0].length) {
+        
+        if (this.formData[0][startIndex] === "") {
+          console.log(`index ${startIndex} empty`);
+          flag = true;
+        }
+        console.log(` starting turn ${startIndex}`);
+        if (this.formData[0][startIndex] < this.formData[0][0]) {
+          // reset checkVal variable;
+          checkVal = 0;
+          // check the any indexes meets requirement
+          if (this.formData[0][startIndex + 1] < this.formData[0][0]) {
+            checkVal += 1;
+          }
+          if (this.formData[0][startIndex + 2] < this.formData[0][0]) {
+            checkVal += 1;
+          }
+          if (this.formData[0][startIndex + 3] < this.formData[0][0]) {
+            checkVal += 1;
+          }
+          if (this.formData[0][startIndex + 4] < this.formData[0][0]) {
+            checkVal += 1;
+          }
+          if (checkVal >= 3) {
+            console.log(`index ${startIndex} meets requirement`);
+            flag = true;
+          }
+        } else {
+          startIndex++;
+        }
+      }
+      }
+
+      
+
+      return console.log("compute...")
     }
   }
 };
