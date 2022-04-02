@@ -2162,290 +2162,292 @@
     <h1>Administration and Scoring</h1>
     <div id="alert-banner">
     </div>
-    <div id="activity-bank">
-      <div id="item-1">
-        <div class="item">
+    <div id="activity-bank" class="container">
+      <div id="item-1" class="row">
+        <div class="item col">
           <p>Wrist Circumduction</p>
         </div>
-        <div class="activity">
+        <div class="activity col">
           <p>Stirring your drink with a spoon</p>
           <p>Drawing circles, spirals, figure-of-8 or the infinity sign</p>
         </div>
       </div>
-      <div id="item-2">
-        <div class="item"><p>Distal finger grasp (Hook Grasp)</p></div>
-        <div class="activity">
+      <div id="item-2" class="row">
+        <div class="item col">
+          <p>Distal finger grasp (Hook Grasp)</p>
+          </div>
+        <div class="activity col">
           <p>Carrying a container or holding a plastic bag by its handles</p>
           <p>Opening a tupperware</p>
           <p>Scratching your back</p>
         </div>
       </div>
-      <div id="item-3">
-        <div class="item">
+      <div id="item-3" class="row">
+        <div class="item col">
           <p>Shoulder Flexion 90&deg; - 180&deg;, Elbow Extended</p>
         </div>
-        <div class="activity">
+        <div class="activity col">
           <p>Taking an item from a high shelf/cupboard</p>
           <p>Wiping a tall mirror or window</p>
         </div>
       </div>
-      <div id="item-4">
-        <div class="item">
+      <div id="item-4" class="row">
+        <div class="item col">
           <p>Spherical Grasp</p>
         </div>
-        <div class="activity">
+        <div class="activity col">
           <p>Holding a ball</p>
           <p>Turning a round door knob</p>
         </div>
       </div>
-      <div id="item-5">
-        <div class="item">
+      <div id="item-5" class="row">
+        <div class="item col">
           <p>Thumb Adduction Grasp</p>
         </div>
-        <div class="activity">
+        <div class="activity col">
           <p>Holding a key</p>
           <p>Swiping a credit card through a slot</p>
           <p>Pressing the buttons on the TV remote control</p>
           <p>Pressing or pinching Bluetac/plasticine</p>
         </div>
       </div>
-      <div id="item-6">
-        <div class="item">
+      <div id="item-6" class="row">
+        <div class="item col">
           <p>Wrist Flexion/Extension, Elbow Extended</p>
         </div>
-        <div class="activity">
+        <div class="activity col" >
           <p>Painting up/down strokes on a piece of paper on the wall</p>
           <p>Shoo the fly</p>
           <p>Placing something into a container</p>
         </div>
       </div>
-      <div id="item-7">
-        <div class="item">
+      <div id="item-7" class="row">
+        <div class="item col">
           <p>Forearm Pronation-Supination, Elbow Extended</p>
         </div>
-        <div class="activity">
+        <div class="activity col">
           <p>Pouring a glass of water (glass placed at a distance)</p>
           <p>Turning a door knob (door at arms length)</p>
           <p>Wiping or drawing a large semi-circle on a whiteboard/mirror</p>
         </div>
       </div>
-      <div id="item-8">
-        <div class="item">
+      <div id="item-8" class="row">
+        <div class="item col">
           <p>Wrist Stability, Elbow Extended</p>
         </div>
-        <div class="activity">
+        <div class="activity col">
           <p>Wiping a mirror/window</p>
           <p>Playing a balloon badminton</p>
         </div>
       </div>
-      <div id="item-9">
-        <div class="item">
+      <div id="item-9" class="row">
+        <div class="item col">
           <p>Speed</p>
         </div>
-        <div class="activity">
+        <div class="activity col">
           <p>Timing yourself to complete a task</p>
           <p>Playing a game of Snap</p>
           <p>Following a Zumba choreography</p>
         </div>
       </div>
-      <div id="item-10">
-        <div class="item">
+      <div id="item-10" class="row">
+        <div class="item col">
           <p>Forearm Supination</p>
         </div>
-        <div class="activity">
+        <div class="activity col">
           <p>Balancing coins/beads with an open palm</p>
           <p>Receiving items with your palms facing upwards</p>
         </div>
       </div>
-      <div id="item-11">
-        <div class="item">
+      <div id="item-11" class="row">
+        <div class="item col">
           <p>Shoulder Abduction 0&deg; - 90&deg;</p>
         </div>
-        <div class="act">
+        <div class="activity  col">
           <p>Placing your arm around your caregiver's shoulders</p>
           <p>Reaching for items with your palms facing upwards</p>
         </div>
       </div>
-      <div id="item-12">
-        <div class="item">
+      <div id="item-12" class="row">
+        <div class="item col">
           <p>Dysmetria</p>
         </div>
-        <div class="activity">
+        <div class="activity col">
           <p>Putting coins into coin box or playing a game of connect-four</p>
           <p>Completeing a craft project using Hama beads/water beads</p>
         </div>
       </div>
-      <div id="item-13">
-        <div class="item">
+      <div id="item-13" class="row">
+        <div class="item col">
           <p>Shoulder External Rotation</p>
         </div>
-        <div class="activity">
+        <div class="activity col">
           <p>Opening the curtains</p>
           <p>Turning the pages of the newspaper</p>
         </div>
       </div>
-      <div id="item-14">
-        <div class="item">
+      <div id="item-14" class="row">
+        <div class="item col">
           <p>Wrist Stability, Elbow at 90&deg;</p>
         </div>
-        <div class="activity">
+        <div class="activity col">
           <p>Holding a cup of water</p>
           <p>Holding a tray</p>
           <p>Threading beads</p>
         </div>
       </div>
-      <div id="item-15">
-        <div class="item">
+      <div id="item-15" class="row">
+        <div class="item col">
           <p>Wrist Flexion/Extesion, Elbow at 90&deg;</p>
         </div>
-        <div class="activity">
+        <div class="activity col">
           <p>Catching, throwing and holding a ball</p>
           <p>Bouncing a ball</p>
         </div>
       </div>
-      <div id="item-16">
-        <div class="item">
+      <div id="item-16" class="row">
+        <div class="item col">
           <p>Thumb to Index Finger Grasp</p>
         </div>
-        <div class="activity">
+        <div class="activity col">
           <p>Practicing doing up buttons</p>
           <p>Putting coins into slots (e.g. coin box)</p>
           <p>Zipping up/down a zipper</p>
         </div>
       </div>
-      <div id="item-17">
-        <div class="item">
+      <div id="item-17" class="row">
+        <div class="item col">
           <p>Shoulder Retraction</p>
         </div>
-        <div class="activity">
+        <div class="activity col">
           <p>Imagining you are holding a tennis ball between your shoulder blades</p>
           <p>Doing scapular push-ups</p>
           <p>Practising the Cat and Cow yoga pose</p>
           <p>Mopping the floor (pulling back the mop)</p>
         </div>
       </div>
-      <div id="item-18">
-        <div class="item">
+      <div id="item-18" class="row">
+        <div class="item col">
           <p>Forearm Pronation-Supination, Elbow at 90&deg;</p>
         </div>
-        <div class="activity">
+        <div class="activity col">
           <p>Pouring things out of cups</p>
           <p>Turning a door knob</p>
           <p>Flipping newspaper/pages/cards</p>
         </div>
       </div>
-      <div id="item-19">
-        <div class="item">
+      <div id="item-19" class="row">
+        <div class="item col">
           <p>Shoulder Flexion 0&deg; - 90&deg;, Elbow Extended</p>
         </div>
-        <div class="activity">
+        <div class="activity col">
           <p>Placing items onto a table at arm's length</p>
           <p>Clipping something onto the IV drop stand</p>
         </div>
       </div>
-      <div id="item-20">
-        <div class="item">
+      <div id="item-20" class="row">
+        <div class="item col">
           <p>Hand to Lumbar Spine</p>
         </div>
-        <div class="activity">
+        <div class="activity col">
           <p>Passing items behind your back</p>
           <p>Applying cream onto your lower back</p>
         </div>
       </div>
-      <div id="item-21">
-        <div class="item">
+      <div id="item-21" class="row">
+        <div class="item col">
           <p>Shoulder Abduction</p>
         </div>
-        <div class="activity">
+        <div class="activity col">
           <p>Placing arm around caregiver's shoulder</p>
           <p>Stretching your arm to unfold a towel or to read the newspaper</p>
           <p>Hang items on the drip stand</p>
         </div>
       </div>
-      <div id="item-22">
-        <div class="item">
+      <div id="item-22" class="row">
+        <div class="item col">
           <p>Elbow Extension</p>
         </div>
-        <div class="activity">
+        <div class="activity col">
           <p>Throw a ball</p>
           <p>Reaching forward</p>
           <p>Playing bowling</p>
         </div>
       </div>
-      <div id="item-23">
-        <div class="item">
+      <div id="item-23" class="row">
+        <div class="item col">
           <p>Forearm Pronation</p>
         </div>
-        <div class="activity">
+        <div class="activity col">
           <p>Turning a door knob</p>
           <p>Turning over cups</p>
           <p>Folding your clothes</p>
         </div>
       </div>
-      <div id="item-24">
-        <div class="item">
+      <div id="item-24" class="row">
+        <div class="item col">
           <p>Tremor</p>
         </div>
-        <div class="activity">
+        <div class="activity col">
           <p>Rolling and catching marbles</p>
           <p>Pinning pegs onto small targets</p>
           <p>Playing the xylophone</p>
         </div>
       </div>
-      <div id="item-25">
-        <div class="item">
+      <div id="item-25" class="row">
+        <div class="item col">
           <p>Cylindrical Grasp</p>
         </div>
-        <div class="activity">
+        <div class="activity col">
           <p>Holding onto a bottle of water</p>
           <p>Holding onto a cup (while pouring water into it)</p>
         </div>
       </div>
-      <div id="item-26">
-        <div class="item">
+      <div id="item-26" class="row">
+        <div class="item col">
           <p>Finger Mass Extension</p>
         </div>
-        <div class="activity">
+        <div class="activity col">
           <p>Releasing your grasp on medicine bottles</p>
           <p>Throwing acn catching squeeze balls</p>
           <p>Opening your fingers wide to place on a large bottle</p>
         </div>
       </div>
-      <div id="item-27">
-        <div class="item"> 
+      <div id="item-27" class="row">
+        <div class="item col"> 
           <p>Shoulder Elevation</p>
         </div>
-        <div class="activity">
+        <div class="activity col">
           <p>Practicing 'I don't know' with shoulder shrugs</p>
           <p>Holding the phone between your head and shoulder</p>
         </div>
       </div>
-      <div id="item-28">
-        <div class="item">
+      <div id="item-28" class="row">
+        <div class="item col">
           <p>Finger Mass Flexion</p>
         </div>
-        <div class="activity">
+        <div class="activity col">
           <p>Holding onto a small bottle</p>
           <p>Squeezing a sponge/towel</p>
           <p>Gathering tissue/paper into a ball</p>
         </div>
       </div>
-      <div id="item-29">
-        <div class="item">
+      <div id="item-29" class="row">
+        <div class="item col">
           <p>Shoulder Adduction/Internal Rotation</p>
         </div>
-        <div class="activity">
+        <div class="activity col">
           <p>Closing curtains</p>
           <p>Applying lotion on your less affected arm and leg</p>
           <p>Turning the pages of the newspaper</p>
           <p>Cleaning the table</p>
         </div>
       </div>
-      <div id="item-30">
-        <div class="item">
+      <div id="item-30" class="row">
+        <div class="item col">
           <p>Elbow Flexion</p>
         </div>
-        <div class="activity">
+        <div class="activity col">
           <p>Bringing a cup to your mouth</p>
           <p>Using wet tissue to clean your face</p>
           <p>Bringing a comb to your head</p>
