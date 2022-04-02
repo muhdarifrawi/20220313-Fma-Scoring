@@ -2168,8 +2168,8 @@
           <p>Wrist Circumduction</p>
         </div>
         <div class="activity col border border-dark p-3">
-          <p>Stirring your drink with a spoon</p>
-          <p>Drawing circles, spirals, figure-of-8 or the infinity sign</p>
+          <p :class="{'text-muted':isMuted}" @click="isMuted = !isMuted">Stirring your drink with a spoon</p>
+          <p :class="{'text-muted':isMuted}" @click="isMuted = !isMuted">Drawing circles, spirals, figure-of-8 or the infinity sign</p>
         </div>
       </div>
       <div id="item-2" class="row">
@@ -2471,6 +2471,7 @@ export default {
   data() {
     return {
       test: "test-score",
+      isMuted: true,
       part:1,
       bicepsReflexMtr: null,
       tricepsReflexMtr: null,
