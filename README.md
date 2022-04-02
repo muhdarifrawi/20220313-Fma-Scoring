@@ -1,5 +1,7 @@
 # fma-scoring
-
+## Useful info
+- [Finding and creating vue.config.js file](https://stackoverflow.com/questions/49423756/vue-cli-3-0-where-is-the-config-file)
+- [Vue debugging in VSC](https://v2.vuejs.org/v2/cookbook/debugging-in-vscode.html?redirect=true)
 ## Known Issues
 - v-model is affecting the bootstrap table visuals.
 

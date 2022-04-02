@@ -2160,13 +2160,19 @@
   </div>
   <div id="part-3" class="container-fluid custom-top-buffer" v-if="part==3">
     <h1>Administration and Scoring</h1>
+    <div id="alert-banner">
+
+    </div>
   </div>
-<div id="btn-controls" class="container-fluid d-flex justify-content-center">
-  <button class="btn btn-light" @click="decreasePage">Previous </button>
-  <span>{{part}}</span>
-  <button class="btn btn-light" @click="increasePage">Next</button>
-  <button class="btn btn-light" @click="computeScore">compute</button>
-</div>
+
+<nav id="btn-controls" class="container-fluid d-flex justify-content-center" aria-label="part controls">
+  <ul class="pagination">
+    <li class="page-item"><button class="btn btn-light page-item me-1" @click="decreasePage">Previous</button></li>
+    <li class="page-item"><span class="btn btn-light page-item">Page {{part}}</span></li>
+    <li class="page-item"><button class="btn btn-light page-item ms-1" @click="increasePage">Next</button></li>
+  </ul>
+</nav>
+<button class="btn btn-light page-item" @click="computeScore">compute</button>
 </template>
 <script>
 export default {
@@ -2370,14 +2376,14 @@ export default {
       let checkVal = 0;
 
       if (this.part == 3){
-        console.log("reached: " + this.formData[0].length)
+        // console.log("reached: " + this.formData[0].length)
         while (flag === false && startIndex < this.formData[0].length) {
         
         if (this.formData[0][startIndex] === "") {
           console.log(`index ${startIndex} empty`);
           flag = true;
         }
-        console.log(` starting turn ${startIndex}`);
+          console.log(` starting turn ${startIndex + 1}`);
         if (this.formData[0][startIndex] < this.formData[0][0]) {
           // reset checkVal variable;
           checkVal = 0;
@@ -2397,16 +2403,33 @@ export default {
           if (checkVal >= 3) {
             console.log(`index ${startIndex} meets requirement`);
             flag = true;
+            document.getElementById("alert-banner").innerHTML = `
+            <div class="alert alert-success d-flex align-items-center" role="alert">
+              <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Success:"><use xlink:href="#check-circle-fill"/></svg>
+              <div>
+                Computation successful.
+              </div>
+              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>`
           }
         } else {
           startIndex++;
         }
+        console.log(`start index: ${startIndex}, form data length: ${this.formData[0].length}
+                      check val: ${checkVal}`)
+        if(startIndex == this.formData[0].length && checkVal<3){
+          console.log(`index ${startIndex} reached. none meets requirement.`)
+          document.getElementById("alert-banner").innerHTML = `
+          <div class="alert alert-danger alert-dismissible fade show" role="alert">
+            <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Danger:"><use xlink:href="#exclamation-triangle-fill"/></svg>
+            No index meets requirement.
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+          </div>`
+        }
       }
       }
 
-      
-
-      return console.log("compute...")
+      return console.log("computation end")
     }
   }
 };
