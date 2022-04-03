@@ -2163,7 +2163,7 @@
     <div id="alert-banner">
     </div>
     <div id="activity-bank" class="container">
-      <div id="item-1" class="row">
+      <div id="item-1" class="row" v-if="isShown[1]">
         <div class="item col border border-dark p-3">
           <p>Wrist Circumduction</p>
         </div>
@@ -2172,7 +2172,7 @@
           <p :class="{'text-muted':isMuted[2]}" @click="isMuted[2] = !isMuted[2]">Drawing circles, spirals, figure-of-8 or the infinity sign</p>
         </div>
       </div>
-      <div id="item-2" class="row">
+      <div id="item-2" class="row" v-if="isShown[2]">
         <div class="item col border border-dark p-3">
           <p>Distal finger grasp (Hook Grasp)</p>
           </div>
@@ -2182,7 +2182,7 @@
           <p :class="{'text-muted':isMuted[5]}" @click="isMuted[5] = !isMuted[5]">Scratching your back</p>
         </div>
       </div>
-      <div id="item-3" class="row">
+      <div id="item-3" class="row" v-if="isShown[3]">
         <div class="item col border border-dark p-3">
           <p>Shoulder Flexion 90&deg; - 180&deg;, Elbow Extended</p>
         </div>
@@ -2191,7 +2191,7 @@
           <p :class="{'text-muted':isMuted[7]}" @click="isMuted[7] = !isMuted[7]">Wiping a tall mirror or window</p>
         </div>
       </div>
-      <div id="item-4" class="row">
+      <div id="item-4" class="row" v-if="isShown[4]">
         <div class="item col border border-dark p-3">
           <p>Spherical Grasp</p>
         </div>
@@ -2200,7 +2200,7 @@
           <p :class="{'text-muted':isMuted[9]}" @click="isMuted[9] = !isMuted[9]">Turning a round door knob</p>
         </div>
       </div>
-      <div id="item-5" class="row">
+      <div id="item-5" class="row" v-if="isShown[5]">
         <div class="item col border border-dark p-3">
           <p>Thumb Adduction Grasp</p>
         </div>
@@ -2211,7 +2211,7 @@
           <p :class="{'text-muted':isMuted[13]}" @click="isMuted[13] = !isMuted[13]">Pressing or pinching Bluetac/plasticine</p>
         </div>
       </div>
-      <div id="item-6" class="row">
+      <div id="item-6" class="row" v-if="isShown[6]">
         <div class="item col border border-dark p-3">
           <p>Wrist Flexion/Extension, Elbow Extended</p>
         </div>
@@ -2221,7 +2221,7 @@
           <p :class="{'text-muted':isMuted[16]}" @click="isMuted[16] = !isMuted[16]">Placing something into a container</p>
         </div>
       </div>
-      <div id="item-7" class="row">
+      <div id="item-7" class="row" v-if="isShown[7]">
         <div class="item col border border-dark p-3">
           <p>Forearm Pronation-Supination, Elbow Extended</p>
         </div>
@@ -2231,7 +2231,7 @@
           <p :class="{'text-muted':isMuted[19]}" @click="isMuted[19] = !isMuted[19]">Wiping or drawing a large semi-circle on a whiteboard/mirror</p>
         </div>
       </div>
-      <div id="item-8" class="row">
+      <div id="item-8" class="row" v-if="isShown[8]">
         <div class="item col border border-dark p-3">
           <p>Wrist Stability, Elbow Extended</p>
         </div>
@@ -2240,7 +2240,7 @@
           <p :class="{'text-muted':isMuted[21]}" @click="isMuted[21] = !isMuted[21]">Playing a balloon badminton</p>
         </div>
       </div>
-      <div id="item-9" class="row">
+      <div id="item-9" class="row" v-if="isShown[9]">
         <div class="item col border border-dark p-3">
           <p>Speed</p>
         </div>
@@ -2250,7 +2250,7 @@
           <p :class="{'text-muted':isMuted[24]}" @click="isMuted[24] = !isMuted[24]">Following a Zumba choreography</p>
         </div>
       </div>
-      <div id="item-10" class="row">
+      <div id="item-10" class="row" v-if="isShown[10]">
         <div class="item col border border-dark p-3">
           <p>Forearm Supination</p>
         </div>
@@ -2259,7 +2259,7 @@
           <p :class="{'text-muted':isMuted[26]}" @click="isMuted[26] = !isMuted[26]">Receiving items with your palms facing upwards</p>
         </div>
       </div>
-      <div id="item-11" class="row">
+      <div id="item-11" class="row" v-if="isShown[11]">
         <div class="item col border border-dark p-3">
           <p>Shoulder Abduction 0&deg; - 90&deg;</p>
         </div>
@@ -2268,7 +2268,7 @@
           <p :class="{'text-muted':isMuted[28]}" @click="isMuted[28] = !isMuted[28]">Reaching for items with your palms facing upwards</p>
         </div>
       </div>
-      <div id="item-12" class="row">
+      <div id="item-12" class="row" v-if="isShown[12]">
         <div class="item col border border-dark p-3">
           <p>Dysmetria</p>
         </div>
@@ -2277,7 +2277,7 @@
           <p :class="{'text-muted':isMuted[30]}" @click="isMuted[30] = !isMuted[30]">Completeing a craft project using Hama beads/water beads</p>
         </div>
       </div>
-      <div id="item-13" class="row">
+      <div id="item-13" class="row" v-if="isShown[13]">
         <div class="item col border border-dark p-3">
           <p>Shoulder External Rotation</p>
         </div>
@@ -2286,7 +2286,7 @@
           <p :class="{'text-muted':isMuted[32]}" @click="isMuted[32] = !isMuted[32]">Turning the pages of the newspaper</p>
         </div>
       </div>
-      <div id="item-14" class="row">
+      <div id="item-14" class="row" v-if="isShown[14]">
         <div class="item col border border-dark p-3">
           <p>Wrist Stability, Elbow at 90&deg;</p>
         </div>
@@ -2296,7 +2296,7 @@
           <p :class="{'text-muted':isMuted[35]}" @click="isMuted[35] = !isMuted[35]">Threading beads</p>
         </div>
       </div>
-      <div id="item-15" class="row">
+      <div id="item-15" class="row" v-if="isShown[15]">
         <div class="item col border border-dark p-3">
           <p>Wrist Flexion/Extesion, Elbow at 90&deg;</p>
         </div>
@@ -2305,7 +2305,7 @@
           <p :class="{'text-muted':isMuted[37]}" @click="isMuted[37] = !isMuted[37]">Bouncing a ball</p>
         </div>
       </div>
-      <div id="item-16" class="row">
+      <div id="item-16" class="row" v-if="isShown[16]">
         <div class="item col border border-dark p-3">
           <p>Thumb to Index Finger Grasp</p>
         </div>
@@ -2315,7 +2315,7 @@
           <p :class="{'text-muted':isMuted[40]}" @click="isMuted[40] = !isMuted[40]">Zipping up/down a zipper</p>
         </div>
       </div>
-      <div id="item-17" class="row">
+      <div id="item-17" class="row" v-if="isShown[17]">
         <div class="item col border border-dark p-3">
           <p>Shoulder Retraction</p>
         </div>
@@ -2326,7 +2326,7 @@
           <p :class="{'text-muted':isMuted[44]}" @click="isMuted[44] = !isMuted[44]">Mopping the floor (pulling back the mop)</p>
         </div>
       </div>
-      <div id="item-18" class="row">
+      <div id="item-18" class="row" v-if="isShown[18]">
         <div class="item col border border-dark p-3">
           <p>Forearm Pronation-Supination, Elbow at 90&deg;</p>
         </div>
@@ -2336,7 +2336,7 @@
           <p :class="{'text-muted':isMuted[47]}" @click="isMuted[47] = !isMuted[47]">Flipping newspaper/pages/cards</p>
         </div>
       </div>
-      <div id="item-19" class="row">
+      <div id="item-19" class="row" v-if="isShown[19]">
         <div class="item col border border-dark p-3">
           <p>Shoulder Flexion 0&deg; - 90&deg;, Elbow Extended</p>
         </div>
@@ -2345,7 +2345,7 @@
           <p :class="{'text-muted':isMuted[49]}" @click="isMuted[49] = !isMuted[49]">Clipping something onto the IV drop stand</p>
         </div>
       </div>
-      <div id="item-20" class="row">
+      <div id="item-20" class="row" v-if="isShown[20]">
         <div class="item col border border-dark p-3">
           <p>Hand to Lumbar Spine</p>
         </div>
@@ -2354,7 +2354,7 @@
           <p :class="{'text-muted':isMuted[51]}" @click="isMuted[51] = !isMuted[51]">Applying cream onto your lower back</p>
         </div>
       </div>
-      <div id="item-21" class="row">
+      <div id="item-21" class="row" v-if="isShown[21]">
         <div class="item col border border-dark p-3">
           <p>Shoulder Abduction</p>
         </div>
@@ -2364,7 +2364,7 @@
           <p :class="{'text-muted':isMuted[54]}" @click="isMuted[54] = !isMuted[54]">Hang items on the drip stand</p>
         </div>
       </div>
-      <div id="item-22" class="row">
+      <div id="item-22" class="row" v-if="isShown[22]">
         <div class="item col border border-dark p-3">
           <p>Elbow Extension</p>
         </div>
@@ -2374,7 +2374,7 @@
           <p :class="{'text-muted':isMuted[57]}" @click="isMuted[57] = !isMuted[57]">Playing bowling</p>
         </div>
       </div>
-      <div id="item-23" class="row">
+      <div id="item-23" class="row" v-if="isShown[23]">
         <div class="item col border border-dark p-3">
           <p>Forearm Pronation</p>
         </div>
@@ -2384,7 +2384,7 @@
           <p :class="{'text-muted':isMuted[60]}" @click="isMuted[60] = !isMuted[60]">Folding your clothes</p>
         </div>
       </div>
-      <div id="item-24" class="row">
+      <div id="item-24" class="row" v-if="isShown[24]">
         <div class="item col border border-dark p-3">
           <p>Tremor</p>
         </div>
@@ -2394,7 +2394,7 @@
           <p :class="{'text-muted':isMuted[63]}" @click="isMuted[63] = !isMuted[63]">Playing the xylophone</p>
         </div>
       </div>
-      <div id="item-25" class="row">
+      <div id="item-25" class="row" v-if="isShown[25]">
         <div class="item col border border-dark p-3">
           <p>Cylindrical Grasp</p>
         </div>
@@ -2403,7 +2403,7 @@
           <p :class="{'text-muted':isMuted[65]}" @click="isMuted[65] = !isMuted[65]">Holding onto a cup (while pouring water into it)</p>
         </div>
       </div>
-      <div id="item-26" class="row">
+      <div id="item-26" class="row" v-if="isShown[26]">
         <div class="item col border border-dark p-3">
           <p>Finger Mass Extension</p>
         </div>
@@ -2413,7 +2413,7 @@
           <p :class="{'text-muted':isMuted[68]}" @click="isMuted[68] = !isMuted[68]">Opening your fingers wide to place on a large bottle</p>
         </div>
       </div>
-      <div id="item-27" class="row">
+      <div id="item-27" class="row" v-if="isShown[27]">
         <div class="item col border border-dark p-3"> 
           <p>Shoulder Elevation</p>
         </div>
@@ -2422,7 +2422,7 @@
           <p :class="{'text-muted':isMuted[70]}" @click="isMuted[70] = !isMuted[70]">Holding the phone between your head and shoulder</p>
         </div>
       </div>
-      <div id="item-28" class="row">
+      <div id="item-28" class="row" v-if="isShown[28]">
         <div class="item col border border-dark p-3">
           <p>Finger Mass Flexion</p>
         </div>
@@ -2432,7 +2432,7 @@
           <p :class="{'text-muted':isMuted[73]}" @click="isMuted[73] = !isMuted[73]">Gathering tissue/paper into a ball</p>
         </div>
       </div>
-      <div id="item-29" class="row">
+      <div id="item-29" class="row" v-if="isShown[29]">
         <div class="item col border border-dark p-3">
           <p>Shoulder Adduction/Internal Rotation</p>
         </div>
@@ -2443,7 +2443,7 @@
           <p :class="{'text-muted':isMuted[77]}" @click="isMuted[77] = !isMuted[77]">Cleaning the table</p>
         </div>
       </div>
-      <div id="item-30" class="row">
+      <div id="item-30" class="row" v-if="isShown[30]">
         <div class="item col border border-dark p-3">
           <p>Elbow Flexion</p>
         </div>
@@ -2552,6 +2552,38 @@ export default {
         78:true,
         79:true,
         80:true,
+      },
+      isShown:{
+        1:true,
+        2:true,
+        3:true,
+        4:true,
+        5:true,
+        6:true,
+        7:true,
+        8:true,
+        9:true,
+        10:true,
+        11:true,
+        12:true,
+        13:true,
+        14:true,
+        15:true,
+        16:true,
+        17:true,
+        18:true,
+        19:true,
+        20:true,
+        21:true,
+        22:true,
+        23:true,
+        24:true,
+        25:true,
+        26:true,
+        27:true,
+        28:true,
+        29:true,
+        30:true,
       },
       part:1,
       bicepsReflexMtr: null,
