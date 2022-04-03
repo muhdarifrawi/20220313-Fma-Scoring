@@ -20,7 +20,7 @@
             >
               Administration and Scoring
             </span>
-            <span v-on:click="goKeyform" class="nav-link navbar-toggler my-2" aria-current="page" href="#"
+            <!-- <span v-on:click="goKeyform" class="nav-link navbar-toggler my-2" aria-current="page" href="#"
               data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation"
             >
               Keyform
@@ -34,7 +34,7 @@
               data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation"
             >
               Brochures
-            </span>
+            </span> -->
           </ul>
       </div>
     </div>
