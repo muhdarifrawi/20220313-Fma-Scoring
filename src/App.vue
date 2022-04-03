@@ -48,7 +48,7 @@ export default {
       display:none;
     }
     #btn-controls{
-    display:none;
+      display:none;
     }
     #part-3{
       display:block;  

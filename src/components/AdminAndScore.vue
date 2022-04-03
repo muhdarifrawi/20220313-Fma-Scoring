@@ -2455,7 +2455,7 @@
   </div>
   <div id="alert-banner" class="container-fluid">
     </div>
-<nav id="btn-controls" class="container-fluid d-flex justify-content-center" aria-label="part controls">
+<nav id="btn-controls" class="container-fluid d-flex justify-content-center my-4" aria-label="part controls">
   <ul class="pagination">
     <li class="page-item"><button class="btn btn-light page-item me-1" @click="decreasePage">Previous</button></li>
     <li class="page-item"><span class="btn btn-light page-item">Page {{part}}</span></li>
@@ -2809,11 +2809,10 @@ export default {
             console.log(`index ${startIndex} meets requirement`);
             flag = true;
             document.getElementById("alert-banner").innerHTML = `
-            <div class="alert alert-success d-flex align-items-center" role="alert">
+            <div class="alert alert-success alert-dismissible fade show" role="alert">
               <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Success:"><use xlink:href="#check-circle-fill"/></svg>
-              <div>
+              
                 Computation successful.
-              </div>
               <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
             </div>`
 
