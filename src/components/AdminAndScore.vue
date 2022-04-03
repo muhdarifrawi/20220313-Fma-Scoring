@@ -2463,7 +2463,6 @@
     <li class="page-item"><button class="btn btn-light page-item mx-5" @click="printPage" v-if="part==3">Print</button></li>
   </ul>
 </nav>
-<button class="btn btn-light page-item" @click="computeScore">compute</button>
 
 </template>
 <script>
