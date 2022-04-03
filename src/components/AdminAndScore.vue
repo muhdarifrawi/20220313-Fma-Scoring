@@ -2030,7 +2030,7 @@
     </table>
     </div>
   <div id="part-2" class="container-fluid custom-top-buffer" v-if="part==2">
-    <h1>Administration and Scoring</h1>
+    <h1>Keyform</h1>
     <table class="table table-striped">
       <tr>
         <th>Score</th>
@@ -2159,7 +2159,7 @@
     </table>
   </div>
   <div id="part-3" class="container-fluid custom-top-buffer" v-if="part==3">
-    <h1>Administration and Scoring</h1>
+    <h1>Activity Bank</h1>
     <div id="alert-banner">
     </div>
     <div id="activity-bank" class="container">
