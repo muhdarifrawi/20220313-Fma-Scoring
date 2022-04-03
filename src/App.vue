@@ -43,4 +43,15 @@ export default {
         margin-top:55px;
         /* background: salmon; */
     }
+  @media print{
+    #main-navbar{
+      display:none;
+    }
+    #btn-controls{
+    display:none;
+    }
+    #part-3{
+      display:block;  
+    }
+  }
 </style>

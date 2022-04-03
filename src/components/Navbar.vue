@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar fixed-top navbar-dark bg-dark">
+  <nav class="navbar fixed-top navbar-dark bg-dark" id="main-navbar">
     <div class="container-fluid">
       <a v-on:click="goMain" class="navbar-brand" href="#">FMA Scoring</a>
       <button
@@ -68,4 +68,5 @@ export default {
     font-size:1em;
     cursor:pointer;
   }
+  
 </style>
