@@ -2820,6 +2820,7 @@ export default {
         } else {
           startIndex++;
         }
+        startIndex++;
         console.log(`start index: ${startIndex}, form data length: ${this.formData[0].length}
                       check val: ${checkVal}`)
         if(startIndex == this.formData[0].length && checkVal<3){
