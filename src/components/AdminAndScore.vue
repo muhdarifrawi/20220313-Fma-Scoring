@@ -2409,7 +2409,7 @@
         </div>
         <div class="activity col border border-dark p-3">
           <p :class="{'text-muted':isMuted[66]}" @click="isMuted[66] = !isMuted[66]">Releasing your grasp on medicine bottles</p>
-          <p :class="{'text-muted':isMuted[67]}" @click="isMuted[67] = !isMuted[67]">Throwing acn catching squeeze balls</p>
+          <p :class="{'text-muted':isMuted[67]}" @click="isMuted[67] = !isMuted[67]">Throwing and catching squeeze balls</p>
           <p :class="{'text-muted':isMuted[68]}" @click="isMuted[68] = !isMuted[68]">Opening your fingers wide to place on a large bottle</p>
         </div>
       </div>
@@ -2464,6 +2464,7 @@
   </ul>
 </nav>
 <button class="btn btn-light page-item" @click="computeScore">compute</button>
+<button class="btn btn-light page-item" @click="printPage">Print</button>
 </template>
 <script>
 export default {
@@ -2802,6 +2803,9 @@ export default {
       }
 
       return console.log("computation end")
+    },
+    printPage(){
+      window.print();
     }
   }
 };
