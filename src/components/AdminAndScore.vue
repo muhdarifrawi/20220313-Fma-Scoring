@@ -2160,8 +2160,6 @@
   </div>
   <div id="part-3" class="container-fluid custom-top-buffer" v-if="part==3">
     <h1>Activity Bank</h1>
-    <div id="alert-banner">
-    </div>
     <div id="activity-bank" class="container">
       <div id="item-1" class="row" v-if="isShown[1]">
         <div class="item col border border-dark p-3">
@@ -2455,16 +2453,18 @@
       </div>
     </div>
   </div>
-
+  <div id="alert-banner" class="container-fluid">
+    </div>
 <nav id="btn-controls" class="container-fluid d-flex justify-content-center" aria-label="part controls">
   <ul class="pagination">
     <li class="page-item"><button class="btn btn-light page-item me-1" @click="decreasePage">Previous</button></li>
     <li class="page-item"><span class="btn btn-light page-item">Page {{part}}</span></li>
-    <li class="page-item"><button class="btn btn-light page-item ms-1" @click="increasePage">Next</button></li>
+    <li class="page-item"><button class="btn btn-light page-item ms-1" @click="increasePage" @change="computeScore">Next</button></li>
+    <li class="page-item"><button class="btn btn-light page-item mx-5" @click="printPage" v-if="part==3">Print</button></li>
   </ul>
 </nav>
 <button class="btn btn-light page-item" @click="computeScore">compute</button>
-<button class="btn btn-light page-item" @click="printPage">Print</button>
+
 </template>
 <script>
 export default {
@@ -2757,6 +2757,7 @@ export default {
       if(this.part<3){
         this.part += 1;
       }
+      this.computeScore();
     },
     decreasePage(){
       if (this.part>1){
@@ -2824,6 +2825,9 @@ export default {
               this.isShown[j] = true;
             }
           }
+          else{
+            startIndex++;
+          }
         } else {
           startIndex++;
         }
@@ -2839,7 +2843,7 @@ export default {
             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
           </div>`
         }
-        startIndex++;
+        // startIndex++;
       }
       }
 
