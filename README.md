@@ -11,7 +11,7 @@
 - [ ] v-model is affecting the bootstrap table visuals.
 - [ ] Print area is not optimised. 
 - [ ] Scores shows up as Nan when form is incomplete.
-- [ ] Non-www URL does not redirect to www URL.
+- [x] ~~Non-www URL does not redirect to www URL.~~ Issue has been resolved. 
 
 ## Useful info
 - [Finding and creating vue.config.js file](https://stackoverflow.com/questions/49423756/vue-cli-3-0-where-is-the-config-file)
