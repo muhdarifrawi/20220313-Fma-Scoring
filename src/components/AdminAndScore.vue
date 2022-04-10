@@ -922,205 +922,205 @@
       </div>
       <!-- SENSATION SECTION -->
       <div id="sensation-table" class="container border m-3">
-      <div class="row">
-        <div class="col"><p class="fs-1">Sensation</p></div>
-      </div>
-      <div class="row">
-        <div class="col-1"><p class="fs-3">#</p></div>
-        <div class="col"><p class="fs-3">Test Item</p></div>
-        <div class="col"><p class="fs-3">Score</p></div>
-      </div>
-      <div class="row border-bottom">
-        <div class="col-1"></div>
-        <div class="col"></div>
-        <div class="col d-flex justify-content-evenly">
-          <span>0</span>
-          <span>1</span>
-          <span>2</span>
+        <div class="row">
+          <div class="col"><p class="fs-1">Sensation</p></div>
         </div>
-      </div>
-      <div class="row border-bottom">
-        <div class="col-1"></div>
-        <div class="col">Light Touch - Upper Arm, Forearm</div>
-        <div class="col d-flex justify-content-evenly">
-          <input
-            class="form-check-input"
-            type="radio"
-            name="light-touch-upper-arm-forearm-snt"
-            value="0"
-            v-model="lightTouchUpperArmForearmSnt"
-          />
-          <input
-            class="form-check-input"
-            type="radio"
-            name="light-touch-upper-arm-forearm-snt"
-            value="1"
-            v-model="lightTouchUpperArmForearmSnt"
-          />
-          <input
-            class="form-check-input"
-            type="radio"
-            name="light-touch-upper-arm-forearm-snt"
-            value="2"
-            v-model="lightTouchUpperArmForearmSnt"
-          />
+        <div class="row">
+          <div class="col-1"><p class="fs-3">#</p></div>
+          <div class="col"><p class="fs-3">Test Item</p></div>
+          <div class="col"><p class="fs-3">Score</p></div>
         </div>
-      </div>
-      <div class="row border-bottom">
-        <div class="col-1"></div>
-        <div class="col">Light Touch - Palmar Surface of Hand</div>
-        <div class="col d-flex justify-content-evenly">
-          <input
-            class="form-check-input"
-            type="radio"
-            name="light-touch-palmar-surface-of-hand-snt"
-            value="0"
-            v-model="lightTouchPalmarSurfaceOfHandSnt"
-          />
-          <input
-            class="form-check-input"
-            type="radio"
-            name="light-touch-palmar-surface-of-hand-snt"
-            value="1"
-            v-model="lightTouchPalmarSurfaceOfHandSnt"
-          />
-          <input
-            class="form-check-input"
-            type="radio"
-            name="light-touch-palmar-surface-of-hand-snt"
-            value="2"
-            v-model="lightTouchPalmarSurfaceOfHandSnt"
-          />
+        <div class="row border-bottom">
+          <div class="col-1"></div>
+          <div class="col"></div>
+          <div class="col d-flex justify-content-evenly">
+            <span>0</span>
+            <span>1</span>
+            <span>2</span>
+          </div>
         </div>
-      </div>
-      <div class="row border-bottom">
-        <div class="col-1"></div>
-        <div class="col">Position - Shoulder</div>
-        <div class="col d-flex justify-content-evenly">
-          <input
-            class="form-check-input"
-            type="radio"
-            name="position-shoulder-snt"
-            value="0"
-            v-model="positionShoulderSnt"
-          />
-          <input
-            class="form-check-input"
-            type="radio"
-            name="position-shoulder-snt"
-            value="1"
-            v-model="positionShoulderSnt"
-          />
-          <input
-            class="form-check-input"
-            type="radio"
-            name="position-shoulder-snt"
-            value="2"
-            v-model="positionShoulderSnt"
-          />
+        <div class="row border-bottom">
+          <div class="col-1"></div>
+          <div class="col">Light Touch - Upper Arm, Forearm</div>
+          <div class="col d-flex justify-content-evenly">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="light-touch-upper-arm-forearm-snt"
+              value="0"
+              v-model="lightTouchUpperArmForearmSnt"
+            />
+            <input
+              class="form-check-input"
+              type="radio"
+              name="light-touch-upper-arm-forearm-snt"
+              value="1"
+              v-model="lightTouchUpperArmForearmSnt"
+            />
+            <input
+              class="form-check-input"
+              type="radio"
+              name="light-touch-upper-arm-forearm-snt"
+              value="2"
+              v-model="lightTouchUpperArmForearmSnt"
+            />
+          </div>
         </div>
-      </div>
-      <div class="row border-bottom">
-        <div class="col-1"></div>
-        <div class="col">Position - Elbow</div>
-        <div class="col d-flex justify-content-evenly">
-          <input
-            class="form-check-input"
-            type="radio"
-            name="position-elbow-snt"
-            value="0"
-            v-model="positionElbowSnt"
-          />
-          <input
-            class="form-check-input"
-            type="radio"
-            name="position-elbow-snt"
-            value="1"
-            v-model="positionElbowSnt"
-          />
-          <input
-            class="form-check-input"
-            type="radio"
-            name="position-elbow-snt"
-            value="2"
-            v-model="positionElbowSnt"
-          />
+        <div class="row border-bottom">
+          <div class="col-1"></div>
+          <div class="col">Light Touch - Palmar Surface of Hand</div>
+          <div class="col d-flex justify-content-evenly">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="light-touch-palmar-surface-of-hand-snt"
+              value="0"
+              v-model="lightTouchPalmarSurfaceOfHandSnt"
+            />
+            <input
+              class="form-check-input"
+              type="radio"
+              name="light-touch-palmar-surface-of-hand-snt"
+              value="1"
+              v-model="lightTouchPalmarSurfaceOfHandSnt"
+            />
+            <input
+              class="form-check-input"
+              type="radio"
+              name="light-touch-palmar-surface-of-hand-snt"
+              value="2"
+              v-model="lightTouchPalmarSurfaceOfHandSnt"
+            />
+          </div>
         </div>
-      </div>
-      <div class="row border-bottom">
-        <div class="col-1"></div>
-        <div class="col">Position - Wrist</div>
-        <div class="col d-flex justify-content-evenly">
-          <input
-            class="form-check-input"
-            type="radio"
-            name="position-wrist-snt"
-            value="0"
-            v-model="positionWristSnt"
-          />
-          <input
-            class="form-check-input"
-            type="radio"
-            name="position-wrist-snt"
-            value="1"
-            v-model="positionWristSnt"
-          />
-          <input
-            class="form-check-input"
-            type="radio"
-            name="position-wrist-snt"
-            value="2"
-            v-model="positionWristSnt"
-          />
+        <div class="row border-bottom">
+          <div class="col-1"></div>
+          <div class="col">Position - Shoulder</div>
+          <div class="col d-flex justify-content-evenly">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="position-shoulder-snt"
+              value="0"
+              v-model="positionShoulderSnt"
+            />
+            <input
+              class="form-check-input"
+              type="radio"
+              name="position-shoulder-snt"
+              value="1"
+              v-model="positionShoulderSnt"
+            />
+            <input
+              class="form-check-input"
+              type="radio"
+              name="position-shoulder-snt"
+              value="2"
+              v-model="positionShoulderSnt"
+            />
+          </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="col-1"></div>
-        <div class="col">Position - Thumb</div>
-        <div class="col d-flex justify-content-evenly">
-          <input
-            class="form-check-input"
-            type="radio"
-            name="position-thumb-snt"
-            value="0"
-            v-model="positionThumbSnt"
-          />
-          <input
-            class="form-check-input"
-            type="radio"
-            name="position-thumb-snt"
-            value="1"
-            v-model="positionThumbSnt"
-          />
-          <input
-            class="form-check-input"
-            type="radio"
-            name="position-thumb-snt"
-            value="2"
-            v-model="positionThumbSnt"
-          />
+        <div class="row border-bottom">
+          <div class="col-1"></div>
+          <div class="col">Position - Elbow</div>
+          <div class="col d-flex justify-content-evenly">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="position-elbow-snt"
+              value="0"
+              v-model="positionElbowSnt"
+            />
+            <input
+              class="form-check-input"
+              type="radio"
+              name="position-elbow-snt"
+              value="1"
+              v-model="positionElbowSnt"
+            />
+            <input
+              class="form-check-input"
+              type="radio"
+              name="position-elbow-snt"
+              value="2"
+              v-model="positionElbowSnt"
+            />
+          </div>
         </div>
-      </div>
+        <div class="row border-bottom">
+          <div class="col-1"></div>
+          <div class="col">Position - Wrist</div>
+          <div class="col d-flex justify-content-evenly">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="position-wrist-snt"
+              value="0"
+              v-model="positionWristSnt"
+            />
+            <input
+              class="form-check-input"
+              type="radio"
+              name="position-wrist-snt"
+              value="1"
+              v-model="positionWristSnt"
+            />
+            <input
+              class="form-check-input"
+              type="radio"
+              name="position-wrist-snt"
+              value="2"
+              v-model="positionWristSnt"
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-1"></div>
+          <div class="col">Position - Thumb</div>
+          <div class="col d-flex justify-content-evenly">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="position-thumb-snt"
+              value="0"
+              v-model="positionThumbSnt"
+            />
+            <input
+              class="form-check-input"
+              type="radio"
+              name="position-thumb-snt"
+              value="1"
+              v-model="positionThumbSnt"
+            />
+            <input
+              class="form-check-input"
+              type="radio"
+              name="position-thumb-snt"
+              value="2"
+              v-model="positionThumbSnt"
+            />
+          </div>
+        </div>
       </div>
       <!-- PASSIVE JOINT MOTION SECTION -->
       <div id="pjt-table" class="container border m-3">
         <div class="row">
-        <div class="col"><p class="fs-1">Passive Joint Motion</p></div>
-      </div>
-      <div class="row">
-        <div class="col-1"><p class="fs-3">#</p></div>
-        <div class="col"><p class="fs-3">Test Item</p></div>
-        <div class="col"><p class="fs-3">Score</p></div>
-      </div>
-      <div class="row border-bottom">
-        <div class="col-1"></div>
-        <div class="col"></div>
-        <div class="col d-flex justify-content-evenly">
-          <span>0</span>
-          <span>1</span>
-          <span>2</span>
+          <div class="col"><p class="fs-1">Passive Joint Motion</p></div>
         </div>
-      </div>
+        <div class="row">
+          <div class="col-1"><p class="fs-3">#</p></div>
+          <div class="col"><p class="fs-3">Test Item</p></div>
+          <div class="col"><p class="fs-3">Score</p></div>
+        </div>
+        <div class="row border-bottom">
+          <div class="col-1"></div>
+          <div class="col"></div>
+          <div class="col d-flex justify-content-evenly">
+            <span>0</span>
+            <span>1</span>
+            <span>2</span>
+          </div>
+        </div>
         <div class="row border-bottom">
           <div class="col-1"></div>
           <div class="col">Shoulder Flexion (0&deg; - 180 &deg;)</div>
@@ -1447,18 +1447,28 @@
         </div>
       </div>
       <!-- JOINT PAIN SECTION -->
-      <div id="jp-table" class="border m-3">
+      <div id="jp-table" class="container border m-3">
         <div class="row">
-          <div class="col"></div>
-          <div class="col">Joint Pain</div>
-          <div class="col">0</div>
-          <div class="col">1</div>
-          <div class="col">2</div>
+          <div class="col"><p class="fs-1">Joint Pain</p></div>
         </div>
         <div class="row">
+          <div class="col-1"><p class="fs-3">#</p></div>
+          <div class="col"><p class="fs-3">Test Item</p></div>
+          <div class="col"><p class="fs-3">Score</p></div>
+        </div>
+        <div class="row border-bottom">
+          <div class="col-1"></div>
           <div class="col"></div>
+          <div class="col d-flex justify-content-evenly">
+            <span>0</span>
+            <span>1</span>
+            <span>2</span>
+          </div>
+        </div>
+        <div class="row border-bottom">
+          <div class="col-1"></div>
           <div class="col">Shoulder Flexion (0&deg; - 180 &deg;)</div>
-          <div class="col">
+          <div class="col d-flex justify-content-evenly">
             <input
               class="form-check-input"
               type="radio"
@@ -1482,10 +1492,10 @@
             />
           </div>
         </div>
-        <div class="row">
-          <div class="col"></div>
+        <div class="row border-bottom">
+          <div class="col-1"></div>
           <div class="col">Shoulder Abduction (0&deg; - 90 &deg;)</div>
-          <div class="col">
+          <div class="col d-flex justify-content-evenly">
             <input
               class="form-check-input"
               type="radio"
@@ -1509,10 +1519,10 @@
             />
           </div>
         </div>
-        <div class="row">
-          <div class="col"></div>
+        <div class="row border-bottom">
+          <div class="col-1"></div>
           <div class="col">External Rotation</div>
-          <div class="col">
+          <div class="col d-flex justify-content-evenly">
             <input
               class="form-check-input"
               type="radio"
@@ -1536,10 +1546,10 @@
             />
           </div>
         </div>
-        <div class="row">
-          <div class="col"></div>
+        <div class="row border-bottom">
+          <div class="col-1"></div>
           <div class="col">Internal Rotation</div>
-          <div class="col">
+          <div class="col d-flex justify-content-evenly">
             <input
               class="form-check-input"
               type="radio"
@@ -1563,10 +1573,10 @@
             />
           </div>
         </div>
-        <div class="row">
-          <div class="col"></div>
+        <div class="row border-bottom">
+          <div class="col-1"></div>
           <div class="col">Elbow Flexion</div>
-          <div class="col">
+          <div class="col d-flex justify-content-evenly">
             <input
               class="form-check-input"
               type="radio"
@@ -1590,10 +1600,10 @@
             />
           </div>
         </div>
-        <div class="row">
-          <div class="col"></div>
+        <div class="row border-bottom">
+          <div class="col-1"></div>
           <div class="col">Elbow Extension</div>
-          <div class="col">
+          <div class="col d-flex justify-content-evenly">
             <input
               class="form-check-input"
               type="radio"
@@ -1617,10 +1627,10 @@
             />
           </div>
         </div>
-        <div class="row">
-          <div class="col"></div>
+        <div class="row border-bottom">
+          <div class="col-1"></div>
           <div class="col">Forearm Pronation</div>
-          <div class="col">
+          <div class="col d-flex justify-content-evenly">
             <input
               class="form-check-input"
               type="radio"
@@ -1644,10 +1654,10 @@
             />
           </div>
         </div>
-        <div class="row">
-          <div class="col"></div>
+        <div class="row border-bottom">
+          <div class="col-1"></div>
           <div class="col">Forearm Supination</div>
-          <div class="col">
+          <div class="col d-flex justify-content-evenly">
             <input
               class="form-check-input"
               type="radio"
@@ -1671,10 +1681,10 @@
             />
           </div>
         </div>
-        <div class="row">
-          <div class="col"></div>
+        <div class="row border-bottom">
+          <div class="col-1"></div>
           <div class="col">Wrist Flexion</div>
-          <div class="col">
+          <div class="col d-flex justify-content-evenly">
             <input
               class="form-check-input"
               type="radio"
@@ -1698,10 +1708,10 @@
             />
           </div>
         </div>
-        <div class="row">
-          <div class="col"></div>
+        <div class="row border-bottom">
+          <div class="col-1"></div>
           <div class="col">Wrist Extension</div>
-          <div class="col">
+          <div class="col d-flex justify-content-evenly">
             <input
               class="form-check-input"
               type="radio"
@@ -1725,10 +1735,10 @@
             />
           </div>
         </div>
-        <div class="row">
-          <div class="col"></div>
+        <div class="row border-bottom">
+          <div class="col-1"></div>
           <div class="col">Fingers Flexion</div>
-          <div class="col">
+          <div class="col d-flex justify-content-evenly">
             <input
               class="form-check-input"
               type="radio"
@@ -1753,9 +1763,9 @@
           </div>
         </div>
         <div class="row">
-          <div class="col"></div>
+          <div class="col-1"></div>
           <div class="col">Fingers Extension</div>
-          <div class="col">
+          <div class="col d-flex justify-content-evenly">
             <input
               class="form-check-input"
               type="radio"
@@ -3096,13 +3106,16 @@ export default {
   vertical-align: middle;
   margin: 0;
 }
-#motor-table{
-  background-color:lightblue;
+#motor-table {
+  background-color: lightblue;
 }
-#sensation-table{
-  background-color:lightgreen;
+#sensation-table {
+  background-color: lightgreen;
 }
-#pjt-table{
-  background-color:lightsalmon;
+#pjt-table {
+  background-color: lightsalmon;
+}
+#jp-table{
+  background-color:lightgoldenrodyellow;
 }
 </style>
