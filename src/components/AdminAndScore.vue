@@ -1102,19 +1102,29 @@
         </div>
       </div>
       </div>
-      <div id="pjt-table" class="border m-3">
-        <!-- PASSIVE JOINT MOTION SECTION -->
+      <!-- PASSIVE JOINT MOTION SECTION -->
+      <div id="pjt-table" class="container border m-3">
         <div class="row">
-          <div class="col"></div>
-          <div class="col">Passive Joint Motion</div>
-          <div class="col">0</div>
-          <div class="col">1</div>
-          <div class="col">2</div>
+        <div class="col"><p class="fs-1">Passive Joint Motion</p></div>
+      </div>
+      <div class="row">
+        <div class="col-1"><p class="fs-3">#</p></div>
+        <div class="col"><p class="fs-3">Test Item</p></div>
+        <div class="col"><p class="fs-3">Score</p></div>
+      </div>
+      <div class="row border-bottom">
+        <div class="col-1"></div>
+        <div class="col"></div>
+        <div class="col d-flex justify-content-evenly">
+          <span>0</span>
+          <span>1</span>
+          <span>2</span>
         </div>
-        <div class="row">
-          <div class="col"></div>
+      </div>
+        <div class="row border-bottom">
+          <div class="col-1"></div>
           <div class="col">Shoulder Flexion (0&deg; - 180 &deg;)</div>
-          <div class="col">
+          <div class="col d-flex justify-content-evenly">
             <input
               class="form-check-input"
               type="radio"
@@ -1138,10 +1148,10 @@
             />
           </div>
         </div>
-        <div class="row">
-          <div class="col"></div>
+        <div class="row border-bottom">
+          <div class="col-1"></div>
           <div class="col">Shoulder Abduction (0&deg; - 90 &deg;)</div>
-          <div class="col">
+          <div class="col d-flex justify-content-evenly">
             <input
               class="form-check-input"
               type="radio"
@@ -1165,10 +1175,10 @@
             />
           </div>
         </div>
-        <div class="row">
-          <div class="col"></div>
+        <div class="row border-bottom">
+          <div class="col-1"></div>
           <div class="col">External Rotation</div>
-          <div class="col">
+          <div class="col d-flex justify-content-evenly">
             <input
               class="form-check-input"
               type="radio"
@@ -1192,10 +1202,10 @@
             />
           </div>
         </div>
-        <div class="row">
-          <div class="col"></div>
+        <div class="row border-bottom">
+          <div class="col-1"></div>
           <div class="col">Internal Rotation</div>
-          <div class="col">
+          <div class="col d-flex justify-content-evenly">
             <input
               class="form-check-input"
               type="radio"
@@ -1219,10 +1229,10 @@
             />
           </div>
         </div>
-        <div class="row">
-          <div class="col"></div>
+        <div class="row border-bottom">
+          <div class="col-1"></div>
           <div class="col">Elbow Flexion</div>
-          <div class="col">
+          <div class="col d-flex justify-content-evenly">
             <input
               class="form-check-input"
               type="radio"
@@ -1246,10 +1256,10 @@
             />
           </div>
         </div>
-        <div class="row">
-          <div class="col"></div>
+        <div class="row border-bottom">
+          <div class="col-1"></div>
           <div class="col">Elbow Extension</div>
-          <div class="col">
+          <div class="col d-flex justify-content-evenly">
             <input
               class="form-check-input"
               type="radio"
@@ -1273,10 +1283,10 @@
             />
           </div>
         </div>
-        <div class="row">
-          <div class="col"></div>
+        <div class="row border-bottom">
+          <div class="col-1"></div>
           <div class="col">Forearm Pronation</div>
-          <div class="col">
+          <div class="col d-flex justify-content-evenly">
             <input
               class="form-check-input"
               type="radio"
@@ -1300,10 +1310,10 @@
             />
           </div>
         </div>
-        <div class="row">
-          <div class="col"></div>
+        <div class="row border-bottom">
+          <div class="col-1"></div>
           <div class="col">Forearm Supination</div>
-          <div class="col">
+          <div class="col d-flex justify-content-evenly">
             <input
               class="form-check-input"
               type="radio"
@@ -1327,10 +1337,10 @@
             />
           </div>
         </div>
-        <div class="row">
-          <div class="col"></div>
+        <div class="row border-bottom">
+          <div class="col-1"></div>
           <div class="col">Wrist Flexion</div>
-          <div class="col">
+          <div class="col d-flex justify-content-evenly">
             <input
               class="form-check-input"
               type="radio"
@@ -1354,10 +1364,10 @@
             />
           </div>
         </div>
-        <div class="row">
-          <div class="col"></div>
+        <div class="row border-bottom">
+          <div class="col-1"></div>
           <div class="col">Wrist Extension</div>
-          <div class="col">
+          <div class="col d-flex justify-content-evenly">
             <input
               class="form-check-input"
               type="radio"
@@ -1381,10 +1391,10 @@
             />
           </div>
         </div>
-        <div class="row">
-          <div class="col"></div>
+        <div class="row border-bottom">
+          <div class="col-1"></div>
           <div class="col">Fingers Flexion</div>
-          <div class="col">
+          <div class="col d-flex justify-content-evenly">
             <input
               class="form-check-input"
               type="radio"
@@ -1409,9 +1419,9 @@
           </div>
         </div>
         <div class="row">
-          <div class="col"></div>
+          <div class="col-1"></div>
           <div class="col">Fingers Extension</div>
-          <div class="col">
+          <div class="col d-flex justify-content-evenly">
             <input
               class="form-check-input"
               type="radio"
@@ -1437,7 +1447,7 @@
         </div>
       </div>
       <!-- JOINT PAIN SECTION -->
-      <div id="jp-tabl" class="border m-3">
+      <div id="jp-table" class="border m-3">
         <div class="row">
           <div class="col"></div>
           <div class="col">Joint Pain</div>
@@ -3091,5 +3101,8 @@ export default {
 }
 #sensation-table{
   background-color:lightgreen;
+}
+#pjt-table{
+  background-color:lightsalmon;
 }
 </style>
