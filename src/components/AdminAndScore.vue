@@ -2621,39 +2621,39 @@
     <div id="score-table" class="container border">
       <div class="row border-bottom">
         <div class="col fs-3">Total Score</div>
-        <div class="col fs-3">{{ totalScore }}/126</div>
+        <div class="col fs-3"><span v-if="!totalScore">--</span><span v-else>{{ totalScore }}</span>/126</div>
       </div>
       <div class="row border-bottom">
         <div class="col fs-5">A - Motor</div>
-        <div class="col fs-5">{{ motorA }}/66</div>
+        <div class="col fs-5"><span v-if="!motorA">--</span><span v-else>{{ motorA }}</span>/66</div>
       </div>
       <div class="row">
         <div class="col">shoulder/Elbow/Forearm</div>
-        <div class="col">{{ sef }}/36</div>
+        <div class="col"><span v-if="!sef">--</span><span v-else>{{ sef }}</span>/36</div>
       </div>
       <div class="row">
         <div class="col">Wrist</div>
-        <div class="col">{{ wrist }}/10</div>
+        <div class="col"><span v-if="!wrist">--</span><span v-else>{{ wrist }}</span>/10</div>
       </div>
       <div class="row">
         <div class="col">Hand</div>
-        <div class="col">{{ hand }}/14</div>
+        <div class="col"><span v-if="!hand">--</span><span v-else>{{ hand }}</span>/14</div>
       </div>
       <div class="row border-bottom">
         <div class="col">Coordination/Speed</div>
-        <div class="col">{{ cs }}/6</div>
+        <div class="col"><span v-if="!cs">--</span><span v-else>{{ cs }}</span>/6</div>
       </div>
       <div class="row border-bottom">
         <div class="col fs-5">B - Sensation</div>
-        <div class="col fs-5">{{ sensationB }}/12</div>
+        <div class="col fs-5"><span v-if="!sensationB">--</span><span v-else>{{ sensationB }}</span>/12</div>
       </div>
       <div class="row border-bottom">
         <div class="col fs-5">C - Passive Joint Motion</div>
-        <div class="col fs-5">{{ pjtC }}/24</div>
+        <div class="col fs-5"><span v-if="!pjtC">--</span><span v-else>{{ pjtC }}</span>/24</div>
       </div>
       <div class="row">
         <div class="col fs-5">D - Joint Pain</div>
-        <div class="col fs-5">{{ jpD }}/24</div>
+        <div class="col fs-5"><span v-if="!jpD">--</span><span v-else>{{ jpD }}</span>/24</div>
       </div>
     </div>
   </div>
