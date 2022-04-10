@@ -2657,7 +2657,7 @@
       </div>
     </div>
   </div>
-  <div id="alert-banner" class="container-fluid"></div>
+  <div id="alert-banner" class="container-fluid my-3"></div>
   <nav
     id="btn-controls"
     class="container-fluid d-flex justify-content-center my-4"
