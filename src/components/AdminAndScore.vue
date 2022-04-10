@@ -2617,7 +2617,7 @@
       </div>
     </div>
   </div>
-  <div id="score-section" class="container-fluid">
+  <div id="score-section" class="container-fluid d-print-none">
     <div id="score-table" class="container border">
       <div class="row border-bottom d-flex align-items-center">
         <div class="col fs-3">Total Score</div>
@@ -2657,10 +2657,10 @@
       </div>
     </div>
   </div>
-  <div id="alert-banner" class="container-fluid my-3"></div>
+  <div id="alert-banner" class="container-fluid my-3 d-print-none"></div>
   <nav
     id="btn-controls"
-    class="container-fluid d-flex justify-content-center my-4"
+    class="container-fluid d-flex justify-content-center my-4 d-print-none"
     aria-label="part controls"
   >
     <ul class="pagination">
