@@ -1791,44 +1791,7 @@
         </div>
       </div>
     </div>
-    <table class="table table-striped">
-      <tr>
-        <th>Total Score</th>
-        <th>{{ totalScore }}/126</th>
-      </tr>
-      <tr>
-        <th>A - Motor</th>
-        <th>{{ motorA }}/66</th>
-      </tr>
-      <tr>
-        <td>shoulder/Elbow/Forearm</td>
-        <td>{{ sef }}/36</td>
-      </tr>
-      <tr>
-        <td>Wrist</td>
-        <td>{{ wrist }}/10</td>
-      </tr>
-      <tr>
-        <td>Hand</td>
-        <td>{{ hand }}/14</td>
-      </tr>
-      <tr>
-        <td>Coordination/Speed</td>
-        <td>{{ cs }}/6</td>
-      </tr>
-      <tr>
-        <th>B - Sensation</th>
-        <th>{{ sensationB }}/12</th>
-      </tr>
-      <tr>
-        <th>C - Passive Joint Motion</th>
-        <th>{{ pjtC }}/24</th>
-      </tr>
-      <tr>
-        <th>D - Joint Pain</th>
-        <th>{{ jpD }}/24</th>
-      </tr>
-    </table>
+    
   </div>
   <div id="part-2" class="container-fluid custom-top-buffer" v-if="part == 2">
     <h1>Keyform</h1>
@@ -2654,10 +2617,50 @@
       </div>
     </div>
   </div>
-  <div id="alert-banner" class="container-fluid"></div>
+  <div id="score-section" class="container-fluid d-print-none">
+    <div id="score-table" class="container border">
+      <div class="row border-bottom d-flex align-items-center">
+        <div class="col fs-3">Total Score</div>
+        <div class="col fs-3"><span v-if="!totalScore">--</span><span v-else>{{ totalScore }}</span>/126</div>
+      </div>
+      <div class="row border-bottom d-flex align-items-center">
+        <div class="col fs-5">A - Motor</div>
+        <div class="col fs-5"><span v-if="!motorA">--</span><span v-else>{{ motorA }}</span>/66</div>
+      </div>
+      <div class="row d-flex align-items-center">
+        <div class="col">shoulder/Elbow/Forearm</div>
+        <div class="col"><span v-if="!sef">--</span><span v-else>{{ sef }}</span>/36</div>
+      </div>
+      <div class="row d-flex align-items-center">
+        <div class="col">Wrist</div>
+        <div class="col"><span v-if="!wrist">--</span><span v-else>{{ wrist }}</span>/10</div>
+      </div>
+      <div class="row d-flex align-items-center">
+        <div class="col">Hand</div>
+        <div class="col"><span v-if="!hand">--</span><span v-else>{{ hand }}</span>/14</div>
+      </div>
+      <div class="row border-bottom d-flex align-items-center">
+        <div class="col">Coordination/Speed</div>
+        <div class="col"><span v-if="!cs">--</span><span v-else>{{ cs }}</span>/6</div>
+      </div>
+      <div class="row border-bottom d-flex align-items-center">
+        <div class="col fs-5">B - Sensation</div>
+        <div class="col fs-5"><span v-if="!sensationB">--</span><span v-else>{{ sensationB }}</span>/12</div>
+      </div>
+      <div class="row border-bottom d-flex align-items-center">
+        <div class="col fs-5">C - Passive Joint Motion</div>
+        <div class="col fs-5"><span v-if="!pjtC">--</span><span v-else>{{ pjtC }}</span>/24</div>
+      </div>
+      <div class="row d-flex align-items-center">
+        <div class="col fs-5">D - Joint Pain</div>
+        <div class="col fs-5"><span v-if="!jpD">--</span><span v-else>{{ jpD }}</span>/24</div>
+      </div>
+    </div>
+  </div>
+  <div id="alert-banner" class="container-fluid my-3 d-print-none"></div>
   <nav
     id="btn-controls"
-    class="container-fluid d-flex justify-content-center my-4"
+    class="container-fluid d-flex justify-content-center my-4 d-print-none"
     aria-label="part controls"
   >
     <ul class="pagination">
@@ -3117,5 +3120,8 @@ export default {
 }
 #jp-table{
   background-color:lightgoldenrodyellow;
+}
+#score-table{
+  background-color:lightgray;
 }
 </style>

@@ -47,9 +47,6 @@ export default {
     #main-navbar{
       display:none;
     }
-    #btn-controls{
-      display:none;
-    }
     #part-3{
       display:block;  
     }
