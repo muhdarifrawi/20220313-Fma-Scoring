@@ -1791,44 +1791,7 @@
         </div>
       </div>
     </div>
-    <table class="table table-striped">
-      <tr>
-        <th>Total Score</th>
-        <th>{{ totalScore }}/126</th>
-      </tr>
-      <tr>
-        <th>A - Motor</th>
-        <th>{{ motorA }}/66</th>
-      </tr>
-      <tr>
-        <td>shoulder/Elbow/Forearm</td>
-        <td>{{ sef }}/36</td>
-      </tr>
-      <tr>
-        <td>Wrist</td>
-        <td>{{ wrist }}/10</td>
-      </tr>
-      <tr>
-        <td>Hand</td>
-        <td>{{ hand }}/14</td>
-      </tr>
-      <tr>
-        <td>Coordination/Speed</td>
-        <td>{{ cs }}/6</td>
-      </tr>
-      <tr>
-        <th>B - Sensation</th>
-        <th>{{ sensationB }}/12</th>
-      </tr>
-      <tr>
-        <th>C - Passive Joint Motion</th>
-        <th>{{ pjtC }}/24</th>
-      </tr>
-      <tr>
-        <th>D - Joint Pain</th>
-        <th>{{ jpD }}/24</th>
-      </tr>
-    </table>
+    
   </div>
   <div id="part-2" class="container-fluid custom-top-buffer" v-if="part == 2">
     <h1>Keyform</h1>
@@ -2654,6 +2617,46 @@
       </div>
     </div>
   </div>
+  <div id="score-section" class="container-fluid">
+    <div id="score-table" class="container border">
+      <div class="row border-bottom">
+        <div class="col fs-3">Total Score</div>
+        <div class="col fs-3">{{ totalScore }}/126</div>
+      </div>
+      <div class="row border-bottom">
+        <div class="col fs-5">A - Motor</div>
+        <div class="col fs-5">{{ motorA }}/66</div>
+      </div>
+      <div class="row">
+        <div class="col">shoulder/Elbow/Forearm</div>
+        <div class="col">{{ sef }}/36</div>
+      </div>
+      <div class="row">
+        <div class="col">Wrist</div>
+        <div class="col">{{ wrist }}/10</div>
+      </div>
+      <div class="row">
+        <div class="col">Hand</div>
+        <div class="col">{{ hand }}/14</div>
+      </div>
+      <div class="row border-bottom">
+        <div class="col">Coordination/Speed</div>
+        <div class="col">{{ cs }}/6</div>
+      </div>
+      <div class="row border-bottom">
+        <div class="col fs-5">B - Sensation</div>
+        <div class="col fs-5">{{ sensationB }}/12</div>
+      </div>
+      <div class="row border-bottom">
+        <div class="col fs-5">C - Passive Joint Motion</div>
+        <div class="col fs-5">{{ pjtC }}/24</div>
+      </div>
+      <div class="row">
+        <div class="col fs-5">D - Joint Pain</div>
+        <div class="col fs-5">{{ jpD }}/24</div>
+      </div>
+    </div>
+  </div>
   <div id="alert-banner" class="container-fluid"></div>
   <nav
     id="btn-controls"
@@ -3117,5 +3120,8 @@ export default {
 }
 #jp-table{
   background-color:lightgoldenrodyellow;
+}
+#score-table{
+  background-color:lightgray;
 }
 </style>
