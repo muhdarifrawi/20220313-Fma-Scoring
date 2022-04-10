@@ -8,9 +8,9 @@
 - [ ] Add credits, references and acnowledgement to README and webpage.
 
 ### Known Issues
-- [ ] v-model is affecting the bootstrap table visuals.
-- [ ] Print area is not optimised. 
-- [ ] Scores shows up as Nan when form is incomplete.
+- [x] ~~v-model is affecting the bootstrap table visuals.~~ Replaced tables to div.
+- [x] ~~Print area is not optimised.~~ Hid unnecessary items in print window. 
+- [x] ~~Scores shows up as Nan when form is incomplete.~~ Reformatted form.
 - [x] ~~Non-www URL does not redirect to www URL.~~ Issue has been resolved. 
 
 ## Useful info
