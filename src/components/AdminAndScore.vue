@@ -21,7 +21,6 @@
             <span>1</span>
             <span>2</span>
           </div>
-          
         </div>
         <div class="row border-bottom">
           <div class="col-1"></div>
@@ -922,18 +921,28 @@
         </div>
       </div>
       <!-- SENSATION SECTION -->
-      <div id="sensation-" class="border m-3">
+      <div id="sensation-table" class="container border m-3">
       <div class="row">
-        <div class="col"></div>
-        <div class="col">Sensation</div>
-        <div class="col">0</div>
-        <div class="col">1</div>
-        <div class="col">2</div>
+        <div class="col"><p class="fs-1">Sensation</p></div>
       </div>
       <div class="row">
+        <div class="col-1"><p class="fs-3">#</p></div>
+        <div class="col"><p class="fs-3">Test Item</p></div>
+        <div class="col"><p class="fs-3">Score</p></div>
+      </div>
+      <div class="row border-bottom">
+        <div class="col-1"></div>
         <div class="col"></div>
+        <div class="col d-flex justify-content-evenly">
+          <span>0</span>
+          <span>1</span>
+          <span>2</span>
+        </div>
+      </div>
+      <div class="row border-bottom">
+        <div class="col-1"></div>
         <div class="col">Light Touch - Upper Arm, Forearm</div>
-        <div class="col">
+        <div class="col d-flex justify-content-evenly">
           <input
             class="form-check-input"
             type="radio"
@@ -957,10 +966,10 @@
           />
         </div>
       </div>
-      <div class="row">
-        <div class="col"></div>
+      <div class="row border-bottom">
+        <div class="col-1"></div>
         <div class="col">Light Touch - Palmar Surface of Hand</div>
-        <div class="col">
+        <div class="col d-flex justify-content-evenly">
           <input
             class="form-check-input"
             type="radio"
@@ -984,10 +993,10 @@
           />
         </div>
       </div>
-      <div class="row">
-        <div class="col"></div>
+      <div class="row border-bottom">
+        <div class="col-1"></div>
         <div class="col">Position - Shoulder</div>
-        <div class="col">
+        <div class="col d-flex justify-content-evenly">
           <input
             class="form-check-input"
             type="radio"
@@ -1011,10 +1020,10 @@
           />
         </div>
       </div>
-      <div class="row">
-        <div class="col"></div>
+      <div class="row border-bottom">
+        <div class="col-1"></div>
         <div class="col">Position - Elbow</div>
-        <div class="col">
+        <div class="col d-flex justify-content-evenly">
           <input
             class="form-check-input"
             type="radio"
@@ -1038,10 +1047,10 @@
           />
         </div>
       </div>
-      <div class="row">
-        <div class="col"></div>
+      <div class="row border-bottom">
+        <div class="col-1"></div>
         <div class="col">Position - Wrist</div>
-        <div class="col">
+        <div class="col d-flex justify-content-evenly">
           <input
             class="form-check-input"
             type="radio"
@@ -1066,9 +1075,9 @@
         </div>
       </div>
       <div class="row">
-        <div class="col"></div>
+        <div class="col-1"></div>
         <div class="col">Position - Thumb</div>
-        <div class="col">
+        <div class="col d-flex justify-content-evenly">
           <input
             class="form-check-input"
             type="radio"
@@ -3079,5 +3088,8 @@ export default {
 }
 #motor-table{
   background-color:lightblue;
+}
+#sensation-table{
+  background-color:lightgreen;
 }
 </style>
