@@ -12,8 +12,10 @@
 - [x] ~~Print area is not optimised.~~ Hid unnecessary items in print window. 
 - [x] ~~Scores shows up as Nan when form is incomplete.~~ Reformatted form.
 - [x] ~~Non-www URL does not redirect to www URL.~~ Issue has been resolved. 
+- [ ] Calculation of parameters are not accurate. 
 
 ## Useful info
+### Tech Info
 - [Finding and creating vue.config.js file](https://stackoverflow.com/questions/49423756/vue-cli-3-0-where-is-the-config-file)
 - [Vue debugging in VSC](https://v2.vuejs.org/v2/cookbook/debugging-in-vscode.html?redirect=true)
 
